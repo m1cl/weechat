@@ -1,0 +1,562 @@
+2017-09-08 18:57:57	--	irc: verbinde zum Server creator-hq.slack.com/6667 (SSL)...
+2017-09-08 18:58:57	=!=	irc: Zeitüberschreitung
+2017-09-08 18:58:57	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-08 18:59:07	--	irc: Neu verbinden zum Server...
+2017-09-08 18:59:07	--	irc: verbinde zum Server creator-hq.slack.com/6667 (SSL)...
+2017-09-08 19:00:36	--	irc: verbinde zum Server creator-hq.slack.com/6667 (SSL)...
+2017-09-08 19:01:36	=!=	irc: Zeitüberschreitung
+2017-09-08 19:01:36	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-08 19:01:46	--	irc: Neu verbinden zum Server...
+2017-09-08 19:01:46	--	irc: verbinde zum Server creator-hq.slack.com/6667 (SSL)...
+2017-09-08 19:02:46	=!=	irc: Zeitüberschreitung
+2017-09-08 19:02:46	--	irc: Verbinde erneut zum Server in 20 Sekunden
+2017-09-08 19:04:11	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 19:04:11	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-08 19:04:11	--	gnutls: empfange 2 Zertifikate
+2017-09-08 19:04:11	--	 - Zertifikat[1]-Information:
+2017-09-08 19:04:11	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-08 19:04:11	--	 - Zertifikat[2]-Information:
+2017-09-08 19:04:11	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-08 19:04:11	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-08 19:04:11	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.71.207.146) hergestellt
+2017-09-08 19:04:12	--	CTCP angefordert von slackbot: VERSION
+2017-09-08 19:04:12	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-08 19:04:12	--	IRC-SLACK gateway
+2017-09-08 19:04:13	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.128.178
+2017-09-08 19:04:13	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-08 19:04:13	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-08 19:04:13	--	there are 7 users
+2017-09-08 19:04:13	--	Message of the day
+2017-09-08 19:04:13	--	WELCOME TO SLACK...
+2017-09-08 19:04:13	--	End of MOTD command
+2017-09-08 19:34:00	--	irc: Vom Server getrennt!
+2017-09-08 19:34:03	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 19:34:03	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-08 19:34:03	--	gnutls: empfange 2 Zertifikate
+2017-09-08 19:34:03	--	 - Zertifikat[1]-Information:
+2017-09-08 19:34:03	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-08 19:34:03	--	 - Zertifikat[2]-Information:
+2017-09-08 19:34:03	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-08 19:34:03	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-08 19:34:04	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.6.66.3) hergestellt
+2017-09-08 19:34:04	--	CTCP angefordert von slackbot: VERSION
+2017-09-08 19:34:04	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-08 19:34:04	--	IRC-SLACK gateway
+2017-09-08 19:34:04	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.69.159
+2017-09-08 19:34:04	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-08 19:34:04	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-08 19:34:04	--	there are 7 users
+2017-09-08 19:34:04	--	Message of the day
+2017-09-08 19:34:04	--	WELCOME TO SLACK...
+2017-09-08 19:34:04	--	End of MOTD command
+2017-09-08 20:07:12	--	irc: Vom Server getrennt!
+2017-09-08 20:08:51	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 20:08:52	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-08 20:08:52	--	gnutls: empfange 2 Zertifikate
+2017-09-08 20:08:52	--	 - Zertifikat[1]-Information:
+2017-09-08 20:08:52	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-08 20:08:52	--	 - Zertifikat[2]-Information:
+2017-09-08 20:08:52	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-08 20:08:52	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-08 20:08:52	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-08 20:08:52	--	CTCP angefordert von slackbot: VERSION
+2017-09-08 20:08:52	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-08 20:08:52	--	IRC-SLACK gateway
+2017-09-08 20:08:52	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-08 20:08:53	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-08 20:08:53	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-08 20:08:53	--	there are 7 users
+2017-09-08 20:08:53	--	Message of the day
+2017-09-08 20:08:53	--	WELCOME TO SLACK...
+2017-09-08 20:08:53	--	End of MOTD command
+2017-09-08 21:32:52	--	irc: Verzögerung ist zu hoch. Es wird eine neue Verbindung zum Server creator hergestellt
+2017-09-08 21:32:52	--	irc: Vom Server getrennt!
+2017-09-08 21:32:52	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-08 21:33:02	--	irc: Neu verbinden zum Server...
+2017-09-08 21:33:02	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:33:02	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-08 21:33:02	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-08 21:33:02	--	irc: Verbinde erneut zum Server in 20 Sekunden
+2017-09-08 21:33:22	--	irc: Neu verbinden zum Server...
+2017-09-08 21:33:22	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:33:22	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-08 21:33:22	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-08 21:33:22	--	irc: Verbinde erneut zum Server in 40 Sekunden
+2017-09-08 21:34:02	--	irc: Neu verbinden zum Server...
+2017-09-08 21:34:02	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:34:02	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-08 21:34:02	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-08 21:34:02	--	irc: Verbinde erneut zum Server in 1 Minute, 20 Sekunden
+2017-09-08 21:35:22	--	irc: Neu verbinden zum Server...
+2017-09-08 21:35:22	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:35:22	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-08 21:35:22	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-08 21:35:22	--	irc: Verbinde erneut zum Server in 2 Minuten, 40 Sekunden
+2017-09-08 21:38:02	--	irc: Neu verbinden zum Server...
+2017-09-08 21:38:02	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:38:02	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-08 21:38:02	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-08 21:38:02	--	irc: Verbinde erneut zum Server in 5 Minuten, 20 Sekunden
+2017-09-08 21:43:22	--	irc: Neu verbinden zum Server...
+2017-09-08 21:43:22	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 21:43:27	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-08 21:43:27	--	gnutls: empfange 2 Zertifikate
+2017-09-08 21:43:27	--	 - Zertifikat[1]-Information:
+2017-09-08 21:43:27	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-08 21:43:27	--	 - Zertifikat[2]-Information:
+2017-09-08 21:43:27	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-08 21:43:27	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-08 21:43:27	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-08 21:43:27	--	CTCP angefordert von slackbot: VERSION
+2017-09-08 21:43:27	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-08 21:43:27	--	IRC-SLACK gateway
+2017-09-08 21:43:28	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-08 21:43:28	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-08 21:43:28	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-08 21:43:28	--	there are 7 users
+2017-09-08 21:43:28	--	Message of the day
+2017-09-08 21:43:28	--	WELCOME TO SLACK...
+2017-09-08 21:43:28	--	End of MOTD command
+2017-09-08 23:55:13	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-08 23:55:13	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-08 23:55:13	--	gnutls: empfange 2 Zertifikate
+2017-09-08 23:55:13	--	 - Zertifikat[1]-Information:
+2017-09-08 23:55:13	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-08 23:55:13	--	 - Zertifikat[2]-Information:
+2017-09-08 23:55:13	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-08 23:55:13	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-08 23:55:13	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.71.207.146) hergestellt
+2017-09-08 23:55:13	--	CTCP angefordert von slackbot: VERSION
+2017-09-08 23:55:13	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-08 23:55:13	--	IRC-SLACK gateway
+2017-09-08 23:55:14	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.128.178
+2017-09-08 23:55:14	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-08 23:55:14	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-08 23:55:14	--	there are 7 users
+2017-09-08 23:55:14	--	Message of the day
+2017-09-08 23:55:14	--	WELCOME TO SLACK...
+2017-09-08 23:55:14	--	End of MOTD command
+2017-09-09 15:39:59	--	irc: Verzögerung ist zu hoch. Es wird eine neue Verbindung zum Server creator hergestellt
+2017-09-09 15:39:59	--	irc: Vom Server getrennt!
+2017-09-09 15:39:59	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-09 15:40:09	--	irc: Neu verbinden zum Server...
+2017-09-09 15:40:09	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-09 15:40:09	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-09 15:40:09	--	gnutls: empfange 2 Zertifikate
+2017-09-09 15:40:09	--	 - Zertifikat[1]-Information:
+2017-09-09 15:40:09	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-09 15:40:09	--	 - Zertifikat[2]-Information:
+2017-09-09 15:40:09	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-09 15:40:09	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-09 15:40:10	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.71.207.146) hergestellt
+2017-09-09 15:40:10	--	CTCP angefordert von slackbot: VERSION
+2017-09-09 15:40:10	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-09 15:40:10	--	IRC-SLACK gateway
+2017-09-09 15:40:10	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.128.178
+2017-09-09 15:40:10	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-09 15:40:10	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-09 15:40:10	--	there are 7 users
+2017-09-09 15:40:10	--	Message of the day
+2017-09-09 15:40:10	--	WELCOME TO SLACK...
+2017-09-09 15:40:10	--	End of MOTD command
+2017-09-09 15:52:31	--	irc: Vom Server getrennt!
+2017-09-09 15:53:53	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-09 15:53:54	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-09 15:53:54	--	gnutls: empfange 2 Zertifikate
+2017-09-09 15:53:54	--	 - Zertifikat[1]-Information:
+2017-09-09 15:53:54	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-09 15:53:54	--	 - Zertifikat[2]-Information:
+2017-09-09 15:53:54	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-09 15:53:54	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-09 15:53:54	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-09 15:53:54	--	CTCP angefordert von slackbot: VERSION
+2017-09-09 15:53:54	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-09 15:53:54	--	IRC-SLACK gateway
+2017-09-09 15:53:55	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-09 15:53:55	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-09 15:53:55	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-09 15:53:55	--	there are 7 users
+2017-09-09 15:53:55	--	Message of the day
+2017-09-09 15:53:55	--	WELCOME TO SLACK...
+2017-09-09 15:53:55	--	End of MOTD command
+2017-09-09 18:40:14	--	irc: Vom Server getrennt!
+2017-09-09 18:40:23	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-09 18:40:24	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-09 18:40:24	--	gnutls: empfange 2 Zertifikate
+2017-09-09 18:40:24	--	 - Zertifikat[1]-Information:
+2017-09-09 18:40:24	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-09 18:40:24	--	 - Zertifikat[2]-Information:
+2017-09-09 18:40:24	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-09 18:40:24	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-09 18:40:24	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-09 18:40:24	--	CTCP angefordert von slackbot: VERSION
+2017-09-09 18:40:24	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-09 18:40:24	--	IRC-SLACK gateway
+2017-09-09 18:40:24	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-09 18:40:24	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-09 18:40:24	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-09 18:40:24	--	there are 7 users
+2017-09-09 18:40:24	--	Message of the day
+2017-09-09 18:40:24	--	WELCOME TO SLACK...
+2017-09-09 18:40:24	--	End of MOTD command
+2017-09-09 23:03:06	--	irc: Vom Server getrennt!
+2017-09-10 12:49:31	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 12:49:31	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 12:49:31	--	gnutls: empfange 2 Zertifikate
+2017-09-10 12:49:31	--	 - Zertifikat[1]-Information:
+2017-09-10 12:49:31	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 12:49:31	--	 - Zertifikat[2]-Information:
+2017-09-10 12:49:31	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 12:49:31	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 12:49:31	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-10 12:49:32	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 12:49:32	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 12:49:32	--	IRC-SLACK gateway
+2017-09-10 12:49:32	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-10 12:49:32	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 12:49:32	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 12:49:32	--	there are 7 users
+2017-09-10 12:49:32	--	Message of the day
+2017-09-10 12:49:32	--	WELCOME TO SLACK...
+2017-09-10 12:49:32	--	End of MOTD command
+2017-09-10 12:50:14	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 12:50:14	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 12:50:14	--	gnutls: empfange 2 Zertifikate
+2017-09-10 12:50:14	--	 - Zertifikat[1]-Information:
+2017-09-10 12:50:14	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 12:50:14	--	 - Zertifikat[2]-Information:
+2017-09-10 12:50:14	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 12:50:14	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 12:50:14	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.6.66.3) hergestellt
+2017-09-10 12:50:15	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 12:50:15	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 12:50:15	--	IRC-SLACK gateway
+2017-09-10 12:50:15	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.69.159
+2017-09-10 12:50:15	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 12:50:15	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 12:50:15	--	there are 7 users
+2017-09-10 12:50:15	--	Message of the day
+2017-09-10 12:50:15	--	WELCOME TO SLACK...
+2017-09-10 12:50:15	--	End of MOTD command
+2017-09-10 12:51:03	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 12:51:03	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 12:51:03	--	gnutls: empfange 2 Zertifikate
+2017-09-10 12:51:03	--	 - Zertifikat[1]-Information:
+2017-09-10 12:51:03	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 12:51:03	--	 - Zertifikat[2]-Information:
+2017-09-10 12:51:03	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 12:51:04	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 12:51:04	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.6.66.3) hergestellt
+2017-09-10 12:51:04	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 12:51:04	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 12:51:04	--	IRC-SLACK gateway
+2017-09-10 12:51:04	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.69.159
+2017-09-10 12:51:04	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 12:51:04	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 12:51:04	--	there are 7 users
+2017-09-10 12:51:04	--	Message of the day
+2017-09-10 12:51:04	--	WELCOME TO SLACK...
+2017-09-10 12:51:04	--	End of MOTD command
+2017-09-10 12:51:39	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 12:51:40	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 12:51:40	--	gnutls: empfange 2 Zertifikate
+2017-09-10 12:51:40	--	 - Zertifikat[1]-Information:
+2017-09-10 12:51:40	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 12:51:40	--	 - Zertifikat[2]-Information:
+2017-09-10 12:51:40	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 12:51:40	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 12:51:40	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-10 12:51:40	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 12:51:40	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 12:51:40	--	IRC-SLACK gateway
+2017-09-10 12:51:41	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-10 12:51:41	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 12:51:41	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 12:51:41	--	there are 7 users
+2017-09-10 12:51:41	--	Message of the day
+2017-09-10 12:51:41	--	WELCOME TO SLACK...
+2017-09-10 12:51:41	--	End of MOTD command
+2017-09-10 14:34:23	--	irc: Vom Server getrennt!
+2017-09-10 14:34:25	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 14:34:25	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 14:34:25	--	gnutls: empfange 2 Zertifikate
+2017-09-10 14:34:25	--	 - Zertifikat[1]-Information:
+2017-09-10 14:34:25	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 14:34:25	--	 - Zertifikat[2]-Information:
+2017-09-10 14:34:25	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 14:34:25	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 14:34:25	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-10 14:34:27	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 14:34:27	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 14:34:27	--	IRC-SLACK gateway
+2017-09-10 14:34:27	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-10 14:34:27	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 14:34:27	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 14:34:27	--	there are 7 users
+2017-09-10 14:34:27	--	Message of the day
+2017-09-10 14:34:27	--	WELCOME TO SLACK...
+2017-09-10 14:34:27	--	End of MOTD command
+2017-09-10 14:38:34	--	irc: Vom Server getrennt!
+2017-09-10 14:38:45	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 14:38:46	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 14:38:46	--	gnutls: empfange 2 Zertifikate
+2017-09-10 14:38:46	--	 - Zertifikat[1]-Information:
+2017-09-10 14:38:46	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 14:38:46	--	 - Zertifikat[2]-Information:
+2017-09-10 14:38:46	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 14:38:46	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 14:38:46	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.6.66.3) hergestellt
+2017-09-10 14:38:46	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 14:38:46	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 14:38:46	--	IRC-SLACK gateway
+2017-09-10 14:38:46	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.69.159
+2017-09-10 14:38:46	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 14:38:46	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 14:38:46	--	there are 7 users
+2017-09-10 14:38:46	--	Message of the day
+2017-09-10 14:38:46	--	WELCOME TO SLACK...
+2017-09-10 14:38:46	--	End of MOTD command
+2017-09-10 14:39:04	--	irc: Vom Server getrennt!
+2017-09-10 14:52:56	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 14:52:56	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 14:52:56	--	gnutls: empfange 2 Zertifikate
+2017-09-10 14:52:56	--	 - Zertifikat[1]-Information:
+2017-09-10 14:52:56	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 14:52:56	--	 - Zertifikat[2]-Information:
+2017-09-10 14:52:56	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 14:52:56	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 14:52:56	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.6.66.3) hergestellt
+2017-09-10 14:52:56	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 14:52:56	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 14:52:56	--	IRC-SLACK gateway
+2017-09-10 14:52:57	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.69.159
+2017-09-10 14:52:57	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 14:52:57	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 14:52:57	--	there are 7 users
+2017-09-10 14:52:57	--	Message of the day
+2017-09-10 14:52:57	--	WELCOME TO SLACK...
+2017-09-10 14:52:57	--	End of MOTD command
+2017-09-10 15:04:51	--	irc: Vom Server getrennt!
+2017-09-10 15:05:04	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 15:05:04	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 15:05:04	--	gnutls: empfange 2 Zertifikate
+2017-09-10 15:05:04	--	 - Zertifikat[1]-Information:
+2017-09-10 15:05:04	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 15:05:04	--	 - Zertifikat[2]-Information:
+2017-09-10 15:05:04	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 15:05:04	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 15:05:04	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-10 15:05:04	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 15:05:04	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 15:05:04	--	IRC-SLACK gateway
+2017-09-10 15:05:05	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-10 15:05:05	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 15:05:05	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 15:05:05	--	there are 7 users
+2017-09-10 15:05:05	--	Message of the day
+2017-09-10 15:05:05	--	WELCOME TO SLACK...
+2017-09-10 15:05:05	--	End of MOTD command
+2017-09-10 15:33:18	--	irc: Vom Server getrennt!
+2017-09-10 15:33:39	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 15:33:39	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 15:33:39	--	gnutls: empfange 2 Zertifikate
+2017-09-10 15:33:39	--	 - Zertifikat[1]-Information:
+2017-09-10 15:33:39	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 15:33:39	--	 - Zertifikat[2]-Information:
+2017-09-10 15:33:39	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 15:33:39	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 15:33:39	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.71.207.146) hergestellt
+2017-09-10 15:33:39	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 15:33:39	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 15:33:39	--	IRC-SLACK gateway
+2017-09-10 15:33:40	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.128.178
+2017-09-10 15:33:40	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 15:33:40	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 15:33:40	--	there are 7 users
+2017-09-10 15:33:40	--	Message of the day
+2017-09-10 15:33:40	--	WELCOME TO SLACK...
+2017-09-10 15:33:40	--	End of MOTD command
+2017-09-10 15:43:11	--	irc: Vom Server getrennt!
+2017-09-10 15:43:14	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 15:43:15	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 15:43:15	--	gnutls: empfange 2 Zertifikate
+2017-09-10 15:43:15	--	 - Zertifikat[1]-Information:
+2017-09-10 15:43:15	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 15:43:15	--	 - Zertifikat[2]-Information:
+2017-09-10 15:43:15	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 15:43:15	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 15:43:15	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-10 15:43:15	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 15:43:15	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 15:43:15	--	IRC-SLACK gateway
+2017-09-10 15:43:15	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-10 15:43:15	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 15:43:15	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 15:43:15	--	there are 7 users
+2017-09-10 15:43:15	--	Message of the day
+2017-09-10 15:43:15	--	WELCOME TO SLACK...
+2017-09-10 15:43:15	--	End of MOTD command
+2017-09-10 16:45:57	--	irc: Verzögerung ist zu hoch. Es wird eine neue Verbindung zum Server creator hergestellt
+2017-09-10 16:45:57	--	irc: Vom Server getrennt!
+2017-09-10 16:45:57	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-10 16:46:07	--	irc: Neu verbinden zum Server...
+2017-09-10 16:46:07	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:46:07	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:46:07	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:46:07	--	irc: Verbinde erneut zum Server in 20 Sekunden
+2017-09-10 16:46:27	--	irc: Neu verbinden zum Server...
+2017-09-10 16:46:27	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:46:27	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:46:27	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:46:27	--	irc: Verbinde erneut zum Server in 40 Sekunden
+2017-09-10 16:47:07	--	irc: Neu verbinden zum Server...
+2017-09-10 16:47:07	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:47:07	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:47:07	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:47:07	--	irc: Verbinde erneut zum Server in 1 Minute, 20 Sekunden
+2017-09-10 16:48:27	--	irc: Neu verbinden zum Server...
+2017-09-10 16:48:27	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:48:27	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:48:27	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:48:27	--	irc: Verbinde erneut zum Server in 2 Minuten, 40 Sekunden
+2017-09-10 16:51:07	--	irc: Neu verbinden zum Server...
+2017-09-10 16:51:07	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:51:07	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:51:07	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:51:07	--	irc: Verbinde erneut zum Server in 5 Minuten, 20 Sekunden
+2017-09-10 16:56:27	--	irc: Neu verbinden zum Server...
+2017-09-10 16:56:27	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 16:56:27	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 16:56:27	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 16:56:27	--	irc: Verbinde erneut zum Server in 10 Minuten
+2017-09-10 16:59:54	--	irc: Vom Server getrennt!
+2017-09-10 17:02:19	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 17:02:30	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 17:02:30	--	gnutls: empfange 2 Zertifikate
+2017-09-10 17:02:30	--	 - Zertifikat[1]-Information:
+2017-09-10 17:02:30	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 17:02:30	--	 - Zertifikat[2]-Information:
+2017-09-10 17:02:30	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 17:02:30	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 17:02:30	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.71.207.146) hergestellt
+2017-09-10 17:02:31	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 17:02:31	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 17:02:31	--	IRC-SLACK gateway
+2017-09-10 17:02:32	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.128.178
+2017-09-10 17:02:32	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 17:02:32	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 17:02:32	--	there are 7 users
+2017-09-10 17:02:32	--	Message of the day
+2017-09-10 17:02:32	--	WELCOME TO SLACK...
+2017-09-10 17:02:32	--	End of MOTD command
+2017-09-10 18:04:57	--	irc: Vom Server getrennt!
+2017-09-10 18:05:00	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 18:05:00	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 18:05:00	--	gnutls: empfange 2 Zertifikate
+2017-09-10 18:05:00	--	 - Zertifikat[1]-Information:
+2017-09-10 18:05:00	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 18:05:00	--	 - Zertifikat[2]-Information:
+2017-09-10 18:05:00	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 18:05:00	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 18:05:01	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-10 18:05:01	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 18:05:01	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 18:05:01	--	IRC-SLACK gateway
+2017-09-10 18:05:02	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-10 18:05:02	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 18:05:02	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 18:05:02	--	there are 7 users
+2017-09-10 18:05:02	--	Message of the day
+2017-09-10 18:05:02	--	WELCOME TO SLACK...
+2017-09-10 18:05:02	--	End of MOTD command
+2017-09-10 18:59:02	--	irc: Verzögerung ist zu hoch. Es wird eine neue Verbindung zum Server creator hergestellt
+2017-09-10 18:59:02	--	irc: Vom Server getrennt!
+2017-09-10 18:59:02	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-10 18:59:12	--	irc: Neu verbinden zum Server...
+2017-09-10 18:59:12	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 18:59:12	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 18:59:12	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 18:59:12	--	irc: Verbinde erneut zum Server in 20 Sekunden
+2017-09-10 18:59:32	--	irc: Neu verbinden zum Server...
+2017-09-10 18:59:32	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 18:59:32	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 18:59:32	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 18:59:32	--	irc: Verbinde erneut zum Server in 40 Sekunden
+2017-09-10 19:00:12	--	irc: Neu verbinden zum Server...
+2017-09-10 19:00:12	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 19:00:12	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 19:00:12	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 19:00:12	--	irc: Verbinde erneut zum Server in 1 Minute, 20 Sekunden
+2017-09-10 19:01:32	--	irc: Neu verbinden zum Server...
+2017-09-10 19:01:32	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 19:01:32	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 19:01:32	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 19:01:32	--	irc: Verbinde erneut zum Server in 2 Minuten, 40 Sekunden
+2017-09-10 19:04:12	--	irc: Neu verbinden zum Server...
+2017-09-10 19:04:12	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 19:04:12	=!=	irc: Adresse "creator-hq.irc.slack.com" nicht gefunden
+2017-09-10 19:04:12	=!=	irc: Fehler: Der Name oder der Dienst ist nicht bekannt
+2017-09-10 19:04:12	--	irc: Verbinde erneut zum Server in 5 Minuten, 20 Sekunden
+2017-09-10 19:09:32	--	irc: Neu verbinden zum Server...
+2017-09-10 19:09:32	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 19:09:32	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 19:09:32	--	gnutls: empfange 2 Zertifikate
+2017-09-10 19:09:32	--	 - Zertifikat[1]-Information:
+2017-09-10 19:09:32	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 19:09:32	--	 - Zertifikat[2]-Information:
+2017-09-10 19:09:32	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 19:09:32	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 19:09:32	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-10 19:09:33	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 19:09:33	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 19:09:33	--	IRC-SLACK gateway
+2017-09-10 19:09:34	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-10 19:09:34	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 19:09:34	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 19:09:34	--	there are 7 users
+2017-09-10 19:09:34	--	Message of the day
+2017-09-10 19:09:34	--	WELCOME TO SLACK...
+2017-09-10 19:09:34	--	End of MOTD command
+2017-09-10 21:13:21	--	irc: Vom Server getrennt!
+2017-09-10 22:09:29	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-10 22:09:29	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-10 22:09:29	--	gnutls: empfange 2 Zertifikate
+2017-09-10 22:09:29	--	 - Zertifikat[1]-Information:
+2017-09-10 22:09:29	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-10 22:09:29	--	 - Zertifikat[2]-Information:
+2017-09-10 22:09:29	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-10 22:09:29	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-10 22:09:29	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.199.169) hergestellt
+2017-09-10 22:09:30	--	CTCP angefordert von slackbot: VERSION
+2017-09-10 22:09:30	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-10 22:09:30	--	IRC-SLACK gateway
+2017-09-10 22:09:30	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.17.201
+2017-09-10 22:09:30	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-10 22:09:30	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-10 22:09:30	--	there are 7 users
+2017-09-10 22:09:30	--	Message of the day
+2017-09-10 22:09:30	--	WELCOME TO SLACK...
+2017-09-10 22:09:30	--	End of MOTD command
+2017-09-11 11:15:49	--	irc: Verzögerung ist zu hoch. Es wird eine neue Verbindung zum Server creator hergestellt
+2017-09-11 11:15:49	--	irc: Vom Server getrennt!
+2017-09-11 11:15:49	--	irc: Verbinde erneut zum Server in 10 Sekunden
+2017-09-11 11:15:59	--	irc: Neu verbinden zum Server...
+2017-09-11 11:15:59	--	irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+2017-09-11 11:15:59	--	gnutls: Verbindung mittels geheimen 512-Bit-Diffie-Hellman-Schlüssels hergestellt
+2017-09-11 11:15:59	--	gnutls: empfange 2 Zertifikate
+2017-09-11 11:15:59	--	 - Zertifikat[1]-Information:
+2017-09-11 11:15:59	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-11 11:15:59	--	 - Zertifikat[2]-Information:
+2017-09-11 11:15:59	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signiert mit RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-11 11:15:59	--	gnutls: Peer-Zertifikat ist vertrauenswürdig
+2017-09-11 11:16:00	--	irc: Verbindung zu creator-hq.irc.slack.com/6667 (52.72.52.186) hergestellt
+2017-09-11 11:16:00	--	CTCP angefordert von slackbot: VERSION
+2017-09-11 11:16:00	--	CTCP Antwort an slackbot: VERSION WeeChat 1.9 (Sep 10 2017)
+2017-09-11 11:16:00	--	IRC-SLACK gateway
+2017-09-11 11:16:00	--	Welcome to Slack IRC Gateway server m1cl!~m1cl@10.0.245.56
+2017-09-11 11:16:00	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-11 11:16:00	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-11 11:16:00	--	there are 7 users
+2017-09-11 11:16:00	--	Message of the day
+2017-09-11 11:16:00	--	WELCOME TO SLACK...
+2017-09-11 11:16:00	--	End of MOTD command

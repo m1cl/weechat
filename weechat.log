@@ -1,0 +1,57 @@
+[2017-09-10 22:09:18] WeeChat 1.9 (kompiliert am Sep 10 2017 12:34:41)
+[2017-09-10 22:09:18] lese Konfigurationsdatei sec.conf
+[2017-09-10 22:09:18] lese Konfigurationsdatei weechat.conf
+[2017-09-10 22:09:18] lese Konfigurationsdatei plugins.conf
+[2017-09-10 22:09:20] lese Konfigurationsdatei charset.conf
+[2017-09-10 22:09:20] lese Konfigurationsdatei logger.conf
+[2017-09-10 22:09:20] lese Konfigurationsdatei exec.conf
+[2017-09-10 22:09:20] lese Konfigurationsdatei trigger.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei aspell.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei alias.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei buflist.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei fifo.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei xfer.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei irc.conf
+[2017-09-10 22:09:21] lese Konfigurationsdatei relay.conf
+[2017-09-10 22:09:23] lese Konfigurationsdatei iset.conf
+[2017-09-10 22:09:28] lese Konfigurationsdatei autosort.conf
+[2017-09-10 22:09:28] speichere Konfigurationsdatei autosort.conf
+[2017-09-10 22:09:28] lese Konfigurationsdatei script.conf
+[2017-09-10 22:09:29] irc: verbinde zum Server chat.freenode.net/6667...
+[2017-09-10 22:09:29] irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+[2017-09-11 11:15:59] irc: verbinde zum Server chat.freenode.net/6667...
+[2017-09-11 11:15:59] irc: verbinde zum Server creator-hq.irc.slack.com/6667 (SSL)...
+[2017-09-11 12:33:49] speichere Konfigurationsdatei sec.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei weechat.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei plugins.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei charset.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei logger.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei exec.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei trigger.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei aspell.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei alias.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei buflist.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei fifo.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei xfer.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei irc.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei relay.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei iset.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei autosort.conf
+[2017-09-11 12:33:49] speichere Konfigurationsdatei script.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei sec.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei weechat.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei plugins.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei charset.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei logger.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei exec.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei trigger.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei aspell.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei alias.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei buflist.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei fifo.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei xfer.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei irc.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei relay.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei iset.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei autosort.conf
+[2017-09-11 12:40:11] speichere Konfigurationsdatei script.conf

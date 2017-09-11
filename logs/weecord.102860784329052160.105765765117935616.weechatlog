@@ -1,0 +1,15 @@
+2017-09-10 18:39:57	mrcl	hey guys i have a question regarding flexbox
+2017-09-10 18:41:21	mrcl	i have links with a border bottom (border-bottom: 3px solid #42b983;)  when it is either active or i hover over it
+2017-09-10 18:41:36	mrcl	and it is not in a fixed position in those states.. it moves around
+2017-09-10 18:41:50	mrcl	However with      display: inline-block; it is in a fixed position
+2017-09-10 18:42:01	mrcl	(But that causes other issues because i need the display to be flex
+2017-09-10 18:46:04	Paisley	one solution is to have `border: 3px solid transparent;` when the link is in the un-hovered state. this way its bounding box stays constant
+2017-09-10 18:53:32	mrcl	thats a smart hack xD
+2017-09-10 18:53:46	mrcl	But i would like to know if there is a more general solution to this
+2017-09-10 18:53:53	mrcl	just for further usage
+2017-09-10 19:15:40	Esmond	i think the other solution is set `border-sizing: border-box`
+2017-09-10 20:00:58	mrcl	<@!83239673031299072> that changes nothing for me 😃
+2017-09-10 21:01:18	alex	not border-sizing, it's box-sizing
+2017-09-10 21:11:17	astronautshark	Anyone using emotion over styled components?
+2017-09-10 23:46:47	astronautshark	Oh so the Babel plugin extracts everything you write in to a static CSS file?
+2017-09-10 23:46:55	astronautshark	DELETE: Oh so the Babel plugin extracts everything you write in to a static CSS file?

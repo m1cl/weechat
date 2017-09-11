@@ -1,0 +1,43 @@
+2017-09-10 19:09:44	BoomAlley	Hello all! Is there anyone that could answer a few basic questions about react-navigation and redux?
+2017-09-10 19:49:55	meric	Hey guys. I'm building my first react native app. Are there any tools you would recommend for alpha testing & deployment? At which point should I acquire an ios developer certificate? (I wanna start with ios only)
+2017-09-10 19:53:04	meric	Any resources / articles you can direct me to is also fine
+2017-09-10 21:09:33	exiled	@meric#1944 react-native-debugger is alright, in order to sign your app you need an ios developer certificate, also you need a mac if you want to develop for ios. And an iphone would be handy if you are doing anything with cameras/videos. Other than that xcode is your best friend.
+2017-09-11 11:57:35	deadcoder0904	Which one do you use - 
+2017-09-11 11:57:35		1. create-react-native-app
+2017-09-11 11:57:35		2. react-native-cli
+2017-09-11 11:57:35		3. ignite-cli
+2017-09-11 12:01:59	suther	Did I need getCurrentPosition if I use watchPosition?
+2017-09-11 12:07:08	thebailers	<@356040525477838849> 1 - create-react-native-app
+2017-09-11 12:07:31	suther	anybody know other RN Chatrooms (maybe with more traffic) ?
+2017-09-11 12:08:42	suther	wonder if that is the "main-support" channel. Response here is low (compaird to most other chats I know).
+2017-09-11 12:08:43	deadcoder0904	<@188423044740415488> ever used something that requires native modules without expo & doesn't work even after ejecting from expo like react-native-admob ???
+2017-09-11 12:09:21	deadcoder0904	<@238374207761678347> Yep its pretty low but something is better than nothing 😉
+2017-09-11 12:09:36	K.	<@238374207761678347> probably most people are just getting to work right now, I don't know
+2017-09-11 12:09:59	deadcoder0904	<@238374207761678347>  Also post to Stack Overflow if u have a question
+2017-09-11 12:10:28	K.	or are sleeping
+2017-09-11 12:10:38	K.	what time is it in SF/SV?
+2017-09-11 12:10:52	deadcoder0904	<@120152986499416064> yep they are sleeping indeed 😂
+2017-09-11 12:11:28	suther	Thought maybe there is a freenode, gitter or slack-chat too.
+2017-09-11 12:12:47	suther	Most of the time ... I read many questions here, but only few answers. That's why I struggle.. and thought .. should this "really" be the "main support channel" of react native?
+2017-09-11 12:13:02	K.	well
+2017-09-11 12:13:08	K.	I guess it isn't a support channel
+2017-09-11 12:15:21	deadcoder0904	<@238374207761678347> Post ur questions to Stack Overflow & u will get answers there faster
+2017-09-11 12:15:30	K.	I had a few people help me, but I think 3 out of 4 of my questions arent answered
+2017-09-11 12:16:29	suther	<@120152986499416064>  same to me
+2017-09-11 12:16:58	deadcoder0904	I had all my questions unanswered 😂 but everyone's maybe working & they are helping in their free time so I don't mind
+2017-09-11 12:17:55	K.	yes
+2017-09-11 12:28:37	thebailers	<@356040525477838849> Sorry for delay, no I haven't this is my first react-naive app, having to learn on the job fast :S
+2017-09-11 12:30:05	deadcoder0904	<@188423044740415488> so i tried & it doesn't work even after ejecting from expo  & that issue is been since 3 months...that's the only reason I'm not using Expo
+2017-09-11 12:32:11	thebailers	<@356040525477838849> So when using create react native app, you recommend ejecting immediately?
+2017-09-11 12:32:22	thebailers	I haven't ejected yet and I am running in the simulator, not expo
+2017-09-11 12:32:56	deadcoder0904	Nope it doesn't work even after ejecting from expo
+2017-09-11 12:33:07	deadcoder0904	Ohhh i was talking about Expo using CRNA
+2017-09-11 12:33:50	deadcoder0904	as CRNA uses Expo
+2017-09-11 12:34:39	deadcoder0904	My use case was some monetization using Google Admob which Expo doesn't support yet so u don't need to worry
+2017-09-11 12:35:11	deadcoder0904	U only need to worry when something doesn't work with Expo & u want that something in ur app
+2017-09-11 12:35:16	deadcoder0904	Like native modules
+2017-09-11 12:35:30	deadcoder0904	But 99% of them work after ejecting from Expo
+2017-09-11 12:35:44	thebailers	Ok, great
+2017-09-11 12:35:46	thebailers	thanks man
+2017-09-11 12:35:50	deadcoder0904	So under extreme conditions it doesn't work
+2017-09-11 12:35:55	deadcoder0904	No problem 😄

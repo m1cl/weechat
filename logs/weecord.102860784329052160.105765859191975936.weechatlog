@@ -1,0 +1,40 @@
+2017-09-10 19:06:42	pewdiepie	Guys, I need a review on my new site
+2017-09-10 19:06:46	pewdiepie	https://zowpi.com
+2017-09-10 19:06:47	pewdiepie	EDIT: https://zowpi.com
+2017-09-10 19:11:57	pewdiepie	I am not very good at designing. I am trying to improve it.
+2017-09-10 20:00:56	KGB	<@155692068675518464> looks alright, I'd use different fonts and pimp the buttons a bit
+2017-09-10 20:01:00	KGB	(main call to action)
+2017-09-10 20:04:42	pewdiepie	<@306738510633893888> Thnx. That would be nice.
+2017-09-10 20:05:01	pewdiepie	I thought green would be nice in a yellowish background.
+2017-09-10 22:44:14	lntormin	hey guys, so I just started a new job and I'm working with React, in a starting dashboard app. However the code that's here has some patterns that I'm not sure if are common or good. So maybe you could tell me your opinion, because I found it rather confusing at points. ``` const wrapComponent = (Component, props) => {
+2017-09-10 22:44:14		  return <App>{Component}</App>;
+2017-09-10 22:44:14		};
+2017-09-10 22:44:14		export default props => (
+2017-09-10 22:44:14		  <HashRouter>
+2017-09-10 22:44:14		    <Switch>
+2017-09-10 22:44:14		      <Route path="/auth" exact component={Auth} />
+2017-09-10 22:44:14		      <Route path="/" render={() => wrapComponent(<Campaigns />, props)} />
+2017-09-10 22:44:14		    </Switch>
+2017-09-10 22:44:14		  </HashRouter>
+2017-09-10 22:44:14		);``` So these are the routes, in the root of the application ``` 
+2017-09-10 22:44:14		class App extends Component {
+2017-09-10 22:44:14		  render() {
+2017-09-10 22:44:14		    const { children } = this.props;
+2017-09-10 22:44:14		    return (
+2017-09-10 22:44:14		      <div className="app">
+2017-09-10 22:44:14		        <Header />
+2017-09-10 22:44:14		        <Grid className="content" fluid componentClass="main">
+2017-09-10 22:44:14		          {children}
+2017-09-10 22:44:14		        </Grid>
+2017-09-10 22:44:14		      </div>
+2017-09-10 22:44:14		    );
+2017-09-10 22:44:14		  }
+2017-09-10 22:44:14		}``` And this is the App component rendered. This question may seem vague, but is this a common pattern? Because I find it rather confusing to need to check the routes component just to know what is being rendered at `children`
+2017-09-10 22:45:26	lntormin	I'm even considering refactoring that `wrapComponent` logic out at this point
+2017-09-10 22:45:43	Paisley	wrapComponent looks like it should just be a component tbh
+2017-09-10 22:46:02	Paisley	a props object is being passed in but not being used
+2017-09-10 22:46:56	Paisley	hmm yeah that is weird
+2017-09-10 22:47:09	Paisley	`<App/> should just be wrapped around everything
+2017-09-10 22:47:13	Paisley	EDIT: `<App/>` should just be wrapped around everything
+2017-09-10 22:48:31	lntormin	Apparently the guy who made the app until that point was a freelancer who isn't working for them anymore, then they hired me fulltime
+2017-09-10 22:48:53	lntormin	Yeah..I guess I'll refactor that stuff..I think it doesn't make a lot of sense to do that

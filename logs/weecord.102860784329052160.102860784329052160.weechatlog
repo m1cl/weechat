@@ -1,0 +1,444 @@
+2017-09-10 15:42:13	mrcl	hey
+2017-09-10 15:42:20	mrcl	http://redux.js.org/docs/basics/UsageWithReact.html#componentstodojs
+2017-09-10 15:42:26	mrcl	Why are they consts and not react classes?
+2017-09-10 18:05:37	acemarke	I just used a web presentation tool called Spectacle
+2017-09-10 18:06:20	tiuPapa	Okay I think now I am getting why state management libs are important, trying to send data up from a nested component is so tedious via function props.
+2017-09-10 18:07:25	🐳 Lyrrad 🐳	Bingo 😃
+2017-09-10 18:15:50	acemarke	(but don't say that around Ryan Florence :)  )
+2017-09-10 18:23:15	tiuPapa	Okay if I am using fetch to get some data for rendering in a component, is placing it in the constructor a good idea or should I use one of those  lifecycle methods?
+2017-09-10 18:25:40	Paisley	yeah, don't use the constructor
+2017-09-10 18:26:08	Paisley	the normal place for this is componentDidMount and componentWillReceiveProps
+2017-09-10 18:26:36	tiuPapa	Ah okay. That was going to be my next question. Thanks. 😄
+2017-09-10 18:26:40	Paisley	*if* you're using local component state is
+2017-09-10 18:26:53	Paisley	with a top-down state model like flux/redux you do it outside the component
+2017-09-10 18:27:02	Paisley	EDIT: *if* you're using local component state that is
+2017-09-10 18:27:52	tiuPapa	Hmmm, if I just need to fetch the data once, even then do I need to a store instead of local state?
+2017-09-10 18:28:08	tiuPapa	EDIT: Hmmm, if I just need to fetch the data once, even then do I need a store instead of local state?
+2017-09-10 18:28:19	Paisley	if you're using a store then you should probably put it in the store
+2017-09-10 18:28:36	tiuPapa	Okay thanks.
+2017-09-10 18:38:48	acemarke	I will point out what is likely my most-referenced Redux FAQ entry: http://redux.js.org/docs/faq/OrganizingState.html#organizing-state-only-redux-state
+2017-09-10 18:43:04	tiuPapa	Whoa this.setState can accept a function as argument?
+2017-09-10 19:24:16	acemarke	yep
+2017-09-10 19:24:34	acemarke	got some articles on that at https://github.com/markerikson/react-redux-links/blob/master/react-state-management.md#using-setstate
+2017-09-10 19:24:34	acemarke	EDIT: got some articles on that at https://github.com/markerikson/react-redux-links/blob/master/react-state-management.md#using-setstate
+2017-09-10 19:43:14	tiuPapa	Whoa noice.
+2017-09-10 19:43:49	tiuPapa	Okay I am getting a little confused with Redux. Can one action have more than one reducer?
+2017-09-10 19:45:00	BTM	"Yes" 😉
+2017-09-10 19:45:28	BTM	In the end there's only one reducer at the very bottom. But a reducer can have more reducers in itself, this is what `combineReducers` do for you
+2017-09-10 19:45:56	BTM	So you do```js
+2017-09-10 19:45:56		const reducers = combineReducers({
+2017-09-10 19:45:56		  users: usersReducer,
+2017-09-10 19:45:56		  posts: postsReducer,
+2017-09-10 19:45:56		  comments: commentsReducer
+2017-09-10 19:45:56		});
+2017-09-10 19:45:56		```
+2017-09-10 19:48:59	acemarke	<@243249744191815680> : one way to think about it is that dispatching an action "broadcasts" the action to all of the slice reducers
+2017-09-10 19:49:10	acemarke	you might have one, some, or all of the slice reducers update their state in response to a single action
+2017-09-10 19:49:20	acemarke	or none
+2017-09-10 19:49:41	BTM	(Oh, sorry read the question wrong)
+2017-09-10 19:50:03	BTM	All reducers can "react" to an action. All reducers are always called when you dispatch an action.
+2017-09-10 19:50:05	tiuPapa	So dispatch is kinda like emiting an event?
+2017-09-10 19:50:15	BTM	So if a reducer knows how to handle it, it can, if it does not, it can ignore it.
+2017-09-10 19:50:36	acemarke	yeah.  Depending on how you look at it, it's like "emitting a pubsub event", or "making a function call at a distance"
+2017-09-10 19:51:04	acemarke	but yes, with `combineReducers`, every slice reducer will be called with its own piece of state and the action, and given a chance to update its slice of state in response to the action
+2017-09-10 19:53:34	tiuPapa	Okay, so if two seperate reducers for the same action update the state in two seperate ways, they won't affect the state the other ones receive?
+2017-09-10 19:54:23	BTM	No, because they work on separate parts of state
+2017-09-10 19:54:50	BTM	With the example above:
+2017-09-10 19:54:50		```js
+2017-09-10 19:54:50		const reducers = combineReducers({
+2017-09-10 19:54:50		  users: usersReducer,
+2017-09-10 19:54:50		  posts: postsReducer,
+2017-09-10 19:54:50		  comments: commentsReducer
+2017-09-10 19:54:50		});
+2017-09-10 19:54:50		```
+2017-09-10 19:54:50		The internal shape is
+2017-09-10 19:54:50		```js
+2017-09-10 19:54:50		{
+2017-09-10 19:54:50		  users: [],
+2017-09-10 19:54:50		  posts: [],
+2017-09-10 19:54:50		  comments: []
+2017-09-10 19:54:50		}
+2017-09-10 19:54:50		```
+2017-09-10 19:54:50		(for example)
+2017-09-10 19:55:11	BTM	And each reducers will only get called with the "slice" of state it works on.
+2017-09-10 19:55:30	BTM	So `usersReducer` will get `overallStore.users` - that is `[]` as the reducer state
+2017-09-10 19:55:51	BTM	On reducer can not directly access the data of other reducer
+2017-09-10 19:56:45	tiuPapa	Ah alright. K, thanks
+2017-09-10 20:01:29	Slacker	```js
+2017-09-10 20:01:29		export default class MyClass{
+2017-09-10 20:01:29		myFunc()
+2017-09-10 20:01:29		{
+2017-09-10 20:01:29		    return(<div></div>)
+2017-09-10 20:01:29		}
+2017-09-10 20:01:29		}
+2017-09-10 20:01:29		```
+2017-09-10 20:01:42	Slacker	Is there a way to call `myFunc` from outside the class ?
+2017-09-10 20:01:55	BTM	Unless it's static, no
+2017-09-10 20:02:13	Slacker	Oh crap
+2017-09-10 20:03:08	Paisley	well you can call it if you have an instance of the class
+2017-09-10 20:03:27	Paisley	```js
+2017-09-10 20:03:27		const instance = new MyClass();
+2017-09-10 20:03:27		instance.myFunc();
+2017-09-10 20:03:27		```
+2017-09-10 20:04:52	Slacker	Yeah without initiating it
+2017-09-10 20:05:05	Slacker	I guess I'll have to
+2017-09-10 20:05:53	Paisley	you can just make it static
+2017-09-10 20:05:57	Paisley	or move it outside the class
+2017-09-10 20:06:02	Paisley	sine it doesn't use `this` anyway
+2017-09-10 20:06:07	Paisley	EDIT: since it doesn't use `this` anyway
+2017-09-10 20:07:17	Slacker	A'ight thanks
+2017-09-10 20:07:53	Slacker	One more thing
+2017-09-10 20:08:21	Slacker	Is there a way to determine whether an object is a class or a generic function ?
+2017-09-10 20:08:33	Slacker	`typeof` always returns `function`
+2017-09-10 20:10:10	l2silver	Does anyone know of any websites where developers can get unpaid internships? Sort of like how freecodeacademy uses students to create websites for non-profits, but instead of non-profits, it could be anything
+2017-09-10 20:10:39	Bahamut	Why unpaid?
+2017-09-10 20:10:58	l2silver	I suppose it doesn't have to be unpaid
+2017-09-10 20:12:02	l2silver	just thinking in terms of who would provide internships. Generally if it's a company, the internship will show up on indeed, but if its from a developer working on a side project, then where do you find those?
+2017-09-10 20:13:01	Bahamut	So there are laws around internships
+2017-09-10 20:13:50	Bahamut	In the US, companies cannot benefit from the work of an unpaid internship, i.e. it must be purely for the intern’s benefit
+2017-09-10 20:14:17	l2silver	Maybe there's another term here I'm looking for. Like a preinternship
+2017-09-10 20:14:41	l2silver	Internships are great stepping stones to paid work, but they can be hard to get
+2017-09-10 20:14:54	l2silver	if you cant get an internship, you get something else to bolster your experience
+2017-09-10 20:16:28	l2silver	Or maybe there's an exchange of equity? I live in Canada where I believe internships are less regulated
+2017-09-10 20:21:56	tiuPapa	Hmm maybe you mean mentorship?
+2017-09-10 20:29:57	l2silver	Maybe mentorship, but I feel like mentorship is more altruistic
+2017-09-10 20:30:16	l2silver	<@243249744191815680> more like something inbetween internship and mentorship
+2017-09-10 20:30:34	l2silver	target audience being people without cs backgrounds
+2017-09-10 20:31:26	l2silver	I think if you have a cs background, the expectation is that you'll get a paid internship, but if you're trying to break in from self-learning / bootcamp , you would look to do something like this
+2017-09-10 20:38:18	Slacker	Shit !
+2017-09-10 20:38:26	Slacker	I spent like 30 mins trying to configure a boilerplate
+2017-09-10 20:38:57	Slacker	When in the end It turns out that all the shit I've been doing was not going to work in the first place due to some limitations
+2017-09-10 20:39:10	Slacker	I'm done for today
+2017-09-10 20:40:05	Slacker	Sometimes I wish I went with Java or .Net instead
+2017-09-10 20:40:40	Haukur	if you're still at the boilerplate stage, it sounds like you could easily make the switch, then
+2017-09-10 20:40:49	acemarke	<@280756457446834176> : what is it you're trying to do?
+2017-09-10 20:42:34	Haukur	EDIT: if you're still at the boilerplate stage, it sounds like you could easily make the switch, then [edit: that sounded a bit snarky, I didn't mean it that way 😃 ]
+2017-09-10 20:43:20	Haukur	EDIT: if you're still at the boilerplate stage, it sounds like you could easily make the switch, then [edit: that sounded a bit snarky, I didn't mean it that way 😃 I'd suggest trying create-react-app or Next.js over using a boilerplate, at least when you start out]
+2017-09-10 20:49:01	tiuPapa	is next.js a cra replacement of sorts?
+2017-09-10 20:49:06	acemarke	no
+2017-09-10 20:49:22	acemarke	Next.js is a tool / framework for doing server-side rendering of React apps
+2017-09-10 20:49:56	acemarke	I suppose you could make comparisons to CRA if you squint hard enough, but they're really different categories
+2017-09-10 20:50:36	tiuPapa	ou alright
+2017-09-10 22:37:17	astronautshark	Oh I didn't know you could destructure out key and value like that
+2017-09-10 22:37:35	astronautshark	That's certainly a game changer
+2017-09-10 22:40:44	acemarke	yeah, destructuring lets you create a local variable named differently than the field in the object
+2017-09-10 22:41:00	acemarke	oh.  no, it's not "key and value"
+2017-09-10 22:41:19	acemarke	it's "`take this.props.demo`, but turn it into a local variable named `ComponentType`"
+2017-09-10 22:41:33	acemarke	EDIT: it's "take `this.props.demo`, but turn it into a local variable named `ComponentType`"
+2017-09-10 22:46:54	Elijah	let's say im making a really small app
+2017-09-10 22:47:01	Elijah	can i pass down all props without any issues?
+2017-09-10 22:48:15	Elijah	i want to pass down all props and functions
+2017-09-10 22:48:25	Elijah	DELETE: i want to pass down all props and functions
+2017-09-10 22:48:28	Elijah	DELETE: can i pass down all props without any issues?
+2017-09-10 22:48:31	Elijah	DELETE: let's say im making a really small app
+2017-09-10 22:52:54	astronautshark	Ohh okay so basically renaming it. Useful
+2017-09-10 23:15:19	Elijah	hey. general questrion... who here uses CSS just vanilla, and who uses sass or scss
+2017-09-10 23:24:01	astronautshark	CSS in JS baby
+2017-09-10 23:25:04	🐳 Lyrrad 🐳	I'm still use SCSS at most. Still haven't found a good use case for a project at the moment.
+2017-09-10 23:26:02	Elijah	<@177572972612026370> do you use a separate style sheet for that ?
+2017-09-10 23:26:32	Elijah	you can right ? ```const styles = {}  
+2017-09-10 23:26:32		export styles```
+2017-09-10 23:26:44	Elijah	EDIT: you can right ? ```const styles = {}  ;
+2017-09-10 23:26:44		export styles```;
+2017-09-10 23:26:54	Elijah	EDIT: you can right ? ```const styles = {}  ;
+2017-09-10 23:26:54		export styles;```
+2017-09-10 23:27:08	Elijah	also if you wouldn't mind, what benefit have you found over regular css?
+2017-09-10 23:35:16	Slacker	oh I was wrong about storybook earlier, nvm
+2017-09-10 23:35:37	Slacker	one more star for storybook
+2017-09-10 23:37:50	🐳 Lyrrad 🐳	EDIT: I still use SCSS at most. Still haven't found a good use case for a project at the moment.
+2017-09-10 23:38:05	🐳 Lyrrad 🐳	EDIT: I still use SCSS at most. Still haven't found a good use case for a project with CSS in JS at the moment.
+2017-09-10 23:42:12	astronautshark	Styled components is probably more popular but I'm also checking out https://github.com/emotion-js/emotion
+2017-09-10 23:42:13	astronautshark	EDIT: Styled components is probably more popular but I'm also checking out https://github.com/emotion-js/emotion
+2017-09-10 23:42:32	astronautshark	Don't even need style sheets or CSS files or any extra webpack config
+2017-09-10 23:43:22	astronautshark	It autoprefixes, applies modular class names, and runs any js functions automatically
+2017-09-10 23:46:00	Elijah	this looks really complicated haha
+2017-09-10 23:47:57	astronautshark	It makes more sense if you're more used to writing React components
+2017-09-10 23:48:12	astronautshark	Since you can just pass down any changing css properties as props
+2017-09-10 23:48:53	Elijah	hmm
+2017-09-10 23:50:05	Elijah	ok that might be a later thing for me
+2017-09-10 23:52:48	Sonicrida	I'm gonna try out emotion REAL soon
+2017-09-10 23:52:54	Sonicrida	those performance benchmarks have me convinced
+2017-09-10 23:53:17	Paisley	the one things that slightly puts me off is that dynamic styles don't work with SSR
+2017-09-10 23:53:35	Paisley	styled-components has a very thorough SSR solution
+2017-09-10 23:54:15	Sonicrida	styled-components I'm using with next atm and it works pretty seamlessly so far
+2017-09-10 23:55:13	acemarke	CSS-in-JS tools have some valid arguments.  But, they may also be more complication than you actually need
+2017-09-10 23:55:30	acemarke	there's a _lot_ of ways to handle CSS in React
+2017-09-10 23:55:45	acemarke	you should probably start with whatever's simplest / you're already used to, and go from there
+2017-09-10 23:56:15	acemarke	there's nothing "wrong" with doing good ol' global CSS files if that works best for you
+2017-09-10 23:56:33	jsonnull	Hey, @acemarke, when you were playing with Flow did you ever type an object returned by `bindActionCreators`?
+2017-09-10 23:56:38	acemarke	nope
+2017-09-10 23:56:50	acemarke	partly because I don't use it directly - I use the object shorthand
+2017-09-10 23:56:58	jsonnull	What's that?
+2017-09-10 23:57:03	acemarke	also, I really wasn't trying to type component files
+2017-09-10 23:57:17	acemarke	```js
+2017-09-10 23:57:17		const actions = {addTodo, toggleTodo};
+2017-09-10 23:57:17		export default connect(mapState, actions)(TodoList);
+2017-09-10 23:57:17		```
+2017-09-10 23:57:41	jsonnull	😮
+2017-09-10 23:57:55	acemarke	what, you hadn't seen me blabber about that yet? :)
+2017-09-10 23:58:04	acemarke	I've been evangelizing it for a while now :)
+2017-09-10 23:58:08	jsonnull	No, I haven't been around the server much for a few weeks
+2017-09-10 23:58:11	jsonnull	Wait so
+2017-09-10 23:58:17	acemarke	all it does internally is:
+2017-09-10 23:58:34	acemarke	```js
+2017-09-10 23:58:34		const defaultMapDispatch = (dispatch) => {
+2017-09-10 23:58:34		    return bindActionCreators(passedInActions, dispatch);
+2017-09-10 23:58:34		}
+2017-09-10 23:58:34		```
+2017-09-10 23:58:50	acemarke	basically, if you use action creators consistently, you should never have to write an actual `mapDispatch` function
+2017-09-10 23:59:20	jsonnull	```JavaScript
+2017-09-10 23:59:20		const mapDispatchToProps = (dispatch: Function) => ({
+2017-09-10 23:59:20		  createQuestionAbove: index => dispatch(createQuestionAbove(index)),
+2017-09-10 23:59:20		  createQuestionBelow: index => dispatch(createQuestionBelow(index)),
+2017-09-10 23:59:20		  createSectionAbove: index => dispatch(createSectionAbove(index)),
+2017-09-10 23:59:20		  createSectionBelow: index => dispatch(createSectionBelow(index)),
+2017-09-10 23:59:20		  duplicateQuestion: index => dispatch(duplicateQuestion(index)),
+2017-09-10 23:59:20		  deleteQuestion: index => dispatch(deleteQuestion(index))
+2017-09-10 23:59:20		})
+2017-09-10 23:59:20		```
+2017-09-10 23:59:37	acemarke	heh.  yeah, just slap all those in an object and be done with it
+2017-09-10 23:59:40	jsonnull	I was just about to rewrite this with bindActionCreators, and was so blissfully happy to see it go
+2017-09-10 23:59:45	jsonnull	OMG
+2017-09-10 23:59:47	jsonnull	That's so great
+2017-09-10 23:59:48	jsonnull	XD
+2017-09-10 23:59:54	jsonnull	I'm dying
+2017-09-11 00:00:00	acemarke	and you see why I keep trying to tell people about this :)
+2017-09-11 00:00:08	jsonnull	That's the best
+2017-09-11 00:00:09	jsonnull	I had no clue
+2017-09-11 00:00:13	jsonnull	When was this introduced?
+2017-09-11 00:00:17	acemarke	it's been there for a _looooong_ time :)
+2017-09-11 00:00:23	acemarke	and it's in the docs
+2017-09-11 00:00:23	jsonnull	In my defense, I REALLY haven't been around for a month or two
+2017-09-11 00:00:30	jsonnull	It's not... wait..
+2017-09-11 00:00:38	jsonnull	You know how often I look at the docs right?
+2017-09-11 00:00:41	jsonnull	Like at least once a week.
+2017-09-11 00:00:43	jsonnull	Is it actually.
+2017-09-11 00:01:04	jsonnull	It is, lol.
+2017-09-11 00:01:25	acemarke	and this is really mentioned in the React-Redux docs: https://github.com/reactjs/react-redux/blob/master/docs/api.md
+2017-09-11 00:01:26	acemarke	EDIT: and this is really mentioned in the React-Redux docs: https://github.com/reactjs/react-redux/blob/master/docs/api.md
+2017-09-11 00:01:46	acemarke	but yeah, it looks like it basically goes all the way back to within a month or two of Redux coming out
+2017-09-11 00:01:47	acemarke	https://github.com/reactjs/react-redux/commit/56a123d9e59925dd4173b67cd6b8ff44ccf30a3d#diff-0f426376b964e609c5c4618eb8bed3b2
+2017-09-11 00:01:48	acemarke	EDIT: https://github.com/reactjs/react-redux/commit/56a123d9e59925dd4173b67cd6b8ff44ccf30a3d#diff-0f426376b964e609c5c4618eb8bed3b2
+2017-09-11 00:02:31	acemarke	if not earlier
+2017-09-11 00:02:36	jsonnull	That's incredible.
+2017-09-11 00:02:44	acemarke	I seriously keep trying to tell people about this :)
+2017-09-11 00:04:26	jsonnull	I had to go find this out
+2017-09-11 00:04:51	jsonnull	I started using Redux in November 2015
+2017-09-11 00:05:02	jsonnull	And this was added September 2015
+2017-09-11 00:05:15	jsonnull	So it's literally been in there the entire time I've used Redux
+2017-09-11 00:05:18	jsonnull	🤦
+2017-09-11 00:05:46	acemarke	:)
+2017-09-11 00:05:59	acemarke	I will say that I've always felt the React-Redux docs are a bit obscured
+2017-09-11 00:06:06	acemarke	granted, Redux is not React-specific
+2017-09-11 00:06:14	acemarke	but we do maintain React-Redux as an "official" tool
+2017-09-11 00:06:16	jsonnull	I did not use it with React when I started using it.
+2017-09-11 00:06:31	acemarke	the main docs just have the "Usage with React" page
+2017-09-11 00:06:46	acemarke	and then random comments throughout the docs that assume you're using React
+2017-09-11 00:07:00	jsonnull	I've commented about this to some degree
+2017-09-11 00:07:07	acemarke	but yeah, the API docs are off to the side in the React-Redux repo
+2017-09-11 00:07:21	acemarke	and because of the variety of things you can pass in for `mapState` and `mapDispatch`, are kind of verbose
+2017-09-11 00:07:54	acemarke	as always, I'm open to suggestions for improving them, especially if those suggestions come with PRs attached :)
+2017-09-11 00:09:51	jsonnull	That sounds like a fun little task, I may take a look at that this evening.
+2017-09-11 00:10:03	jsonnull	I'll get back to you on that.
+2017-09-11 00:11:59	acemarke	sure!
+2017-09-11 11:28:43	spykr	is redux necessary?
+2017-09-11 11:29:25	BTM	No. This article just covers it with redux. There are many Modal solutions that do not require redux. Generally you would use an UI framework that offers it
+2017-09-11 11:29:27	BTM	Eg. semantic ui
+2017-09-11 11:30:54	spykr	i usually write my own scss
+2017-09-11 11:31:19	BTM	Well, then it's just a component that has `position: fixed`
+2017-09-11 11:32:26	spykr	how would you store reference to which window should currently display in the modal? right now i'm basically using a switch statement
+2017-09-11 11:32:27	spykr	doesn't feel right
+2017-09-11 11:33:55	BTM	A modal is just a component like any other
+2017-09-11 11:34:10	BTM	```
+2017-09-11 11:34:10		<Modal>
+2017-09-11 11:34:10		  <h1>Title</h1>
+2017-09-11 11:34:10		  <p>some content ...</p>
+2017-09-11 11:34:10		</Modal>
+2017-09-11 11:34:10		```
+2017-09-11 11:34:18	senthil	hey alll!! i'm trying to get the data stored in asyncStorage, but which I cannot get 
+2017-09-11 11:34:18		```
+2017-09-11 11:34:18		const token = AsyncStorage.getItem('SkreemAuthToken').then((AuthToken) => (console.log(AuthToken)));
+2017-09-11 11:34:18		```
+2017-09-11 11:34:18		Here I want auth token but inside of it I don't know to declare variable and get the value too,
+2017-09-11 11:34:48	senthil	and inside .then( ) I cannot make network calls too!
+2017-09-11 11:35:41	spykr	i'm fairly new to react so i'm not sure how to put it
+2017-09-11 11:35:48	BTM	That's how promises work, <@345456235534876683>
+2017-09-11 11:36:15	BTM	You need to move the whole network logic into the `then` part
+2017-09-11 11:37:01	Nimelrian	<@173766114348630017> I use a simple object to map dialog ids to their respective components
+2017-09-11 11:37:44	spykr	how does it work?
+2017-09-11 11:37:50	senthil	```
+2017-09-11 11:37:50		  const token = AsyncStorage.getItem('SkreemAuthToken').then((AuthToken) =>{
+2017-09-11 11:37:50		    return (dispatch) =>{
+2017-09-11 11:37:50		      fetch('http://api.screem.in/campaign/'+campaign_slug+'/participation',{
+2017-09-11 11:37:50		        method: 'POST',
+2017-09-11 11:37:50		        headers: {
+2017-09-11 11:37:50		          'Content-Type': 'application/json',
+2017-09-11 11:37:50		          'Accept': 'application/vnd.skreem+json; version=1',
+2017-09-11 11:37:50		          'Authorization':'Token token='+token
+2017-09-11 11:37:50		        },body: JSON.stringify({
+2017-09-11 11:37:50		          "influencer_authorization_token": socialAuthToken,
+2017-09-11 11:37:50		          "post_content": post_content,
+2017-09-11 11:37:50		          "campaign_creative_ids": campaign_creatives_ids
+2017-09-11 11:37:50		        })
+2017-09-11 11:37:50		      }).then((response)=> (response.json())).then(data =>{
+2017-09-11 11:37:50		        console.log(data);
+2017-09-11 11:37:50		      }).catch((error)=>{
+2017-09-11 11:37:50		        console.log(error);
+2017-09-11 11:37:50		      });
+2017-09-11 11:37:50		  }
+2017-09-11 11:37:50		  })
+2017-09-11 11:37:50		```
+2017-09-11 11:37:50		I'm trying to do this but it is putting me an error <@119844508086042627>
+2017-09-11 11:37:54	spykr	atm i just have a modal sitting in the App wrapper that takes a "visible" prop and some children
+2017-09-11 11:38:10	BTM	"an error"?
+2017-09-11 11:38:12	spykr	but the children given to it is just decided by "{ props.showLogin && <Login /> }" for each window
+2017-09-11 11:38:35	spykr	your way sounds more efficient but i'm not entirely sure what you mean
+2017-09-11 11:38:50	BTM	There's no `token` in the `.then` part, you are going to get itin in `AuthToken`
+2017-09-11 11:38:54	BTM	EDIT: There's no `token` in the `.then` part, you are going to get it in `AuthToken`
+2017-09-11 11:38:55	HamidRaza	I am using moment.js for time and date functionality in my app. And at some places in the app i don't need to show any date by default. In such cases date will only be shown after some event has occured. 
+2017-09-11 11:38:55		 For that purpose i am passing null to date value but moment.js giving me this error:
+2017-09-11 11:38:55		Uncaught RangeError: Invalid time value
+2017-09-11 11:38:55		Can anybody haw to resolve this? 
+2017-09-11 11:38:55		How can i pass null to moment.js date/time?
+2017-09-11 11:39:49	BTM	<@173766114348630017> without a global state manager, the way you're doing it will be very complicated. Instead each component that wants to show a modal should do so from inside its render function
+2017-09-11 11:40:32	BTM	Eg. 
+2017-09-11 11:40:32		```
+2017-09-11 11:40:32		render() {
+2017-09-11 11:40:32		  return (
+2017-09-11 11:40:32		    <div>
+2017-09-11 11:40:32		     component contnet
+2017-09-11 11:40:32		     {showModal ? <Modal><SomeComponentToShowInModal /></Modal> : null}
+2017-09-11 11:40:32		    </div>
+2017-09-11 11:40:32		  )
+2017-09-11 11:40:32		}
+2017-09-11 11:40:32		```
+2017-09-11 11:40:40	Nimelrian	God, I wish CodeSandbox would allow creating projects from a directory
+2017-09-11 11:40:55	BTM	Ping Ives with it ;>
+2017-09-11 11:41:03	BTM	It allows you to create projects from git repos
+2017-09-11 11:41:05	Nimelrian	EDIT: God, I wish CodeSandbox would allow creating projects from a directory <@92664263025360896>
+2017-09-11 11:41:05	spykr	i'm confused because the same modal can get opened from different pages
+2017-09-11 11:41:16	spykr	the same window**
+2017-09-11 11:41:25	senthil	<@119844508086042627>  SyntaxError: Unexpected token H in JSON at position 0
+2017-09-11 11:41:26	Nimelrian	<@119844508086042627> Yeah, but I don't want to create a github repo every time I want to upload a snippet
+2017-09-11 11:41:38	BTM	<@345456235534876683> again, the SERVER is sending you wrong data
+2017-09-11 11:41:54	BTM	Check why, just look at the response tab. Also, you're not sending the token this way.
+2017-09-11 11:42:26	spykr	the modal sits in the top component and i pass down methods to show/hide each window to the components that show the buttons that open each window
+2017-09-11 11:43:15	Muhammad Arslan	I have been stuck in this function for two days. 
+2017-09-11 11:43:15		```
+2017-09-11 11:43:15		deleteTemplateClicked(templateID) {
+2017-09-11 11:43:15		    deleteTemplate(templateID).then(() => {
+2017-09-11 11:43:15		      this.setState({ successAlert: true, pendingServerAction: false, successMessage: 'Template deleted successfully.' });
+2017-09-11 11:43:15		    }).catch((err) => {
+2017-09-11 11:43:15		      this.setState({ errorAlert: true, errorMessage: 'Template was not deleted. Server returned ' + err });
+2017-09-11 11:43:15		    });
+2017-09-11 11:43:15		    this.renderTemplatesList(true);
+2017-09-11 11:43:15		  }
+2017-09-11 11:43:15		```
+2017-09-11 11:43:15		this function returns `cannot read property .then of undefined`
+2017-09-11 11:43:21	BTM	<@173766114348630017> well, then you have 2 ways:
+2017-09-11 11:43:21		- create a modal system, which you can do things like `modal.show(<Component />)` which is not really what we do in React
+2017-09-11 11:43:21		- make each component that wants to display a modal import the component it wants to show in the modal and just render it
+2017-09-11 11:43:51	BTM	Otherwise - passing the handlers to open/close modals will get really really complex once you end up with a very deep structure.
+2017-09-11 11:43:56	Muhammad Arslan	while other async calls are working just fine.
+2017-09-11 11:44:07	spykr	i don't think that will work within components that have 'position: relative;' right?
+2017-09-11 11:45:01	Nimelrian	<@173766114348630017> https://gist.github.com/Nimelrian/675c6b0d1bf9196cb3a8f108659889ae
+2017-09-11 11:45:03	Nimelrian	EDIT: <@173766114348630017> https://gist.github.com/Nimelrian/675c6b0d1bf9196cb3a8f108659889ae
+2017-09-11 11:45:03	BTM	It will work just fine
+2017-09-11 11:45:36	Nimelrian	Or take my approach, which is Reacty 😉
+2017-09-11 11:45:56	Matis	you can use react-portal to make the modal render at the top level, so there will be no conflicts with parent element css
+2017-09-11 11:45:56		it also comes with some usually desirable modal logic, like close when user presses escape, or when user clicks on the backdrop
+2017-09-11 11:46:44	holz	Good morning,
+2017-09-11 11:46:44		I've got a problem with arrays 😉 
+2017-09-11 11:46:44		```JS
+2017-09-11 11:46:44		usersArray.forEach(user => {
+2017-09-11 11:46:44		   users.push(data.Users.filter(userAws => userAws.Username === user.username))
+2017-09-11 11:46:44		 }); ```
+2017-09-11 11:46:56	Nimelrian	<@156492703696289792> No need for react-portal if you can do things with some simple context usage
+2017-09-11 11:46:57	holz	https://media.discordapp.net/attachments/102860784329052160/356737365206761474/Screenshot_2017.09.11_09h19m17s_017_.png
+2017-09-11 11:47:15	holz	the code above returns: Arrays in Arrays.
+2017-09-11 11:47:15		But I want to add the inner Object direktly to the outher Array.
+2017-09-11 11:47:15		How can I flatten the inner Array?
+2017-09-11 11:47:22	Matis	<@118062458349813768> if any of the parents have a transform, position fixed gets messed up
+2017-09-11 11:47:39	Nimelrian	Which is why you mount the context provider at the top
+2017-09-11 11:47:41	Nimelrian	As usual
+2017-09-11 11:47:58	spykr	in the App component?
+2017-09-11 11:48:16	Muhammad Arslan	<@119844508086042627> can you please guide me on where I'm getting this wrong. `.then` is supposed to work fine just like other functions.
+2017-09-11 11:48:27	BTM	Means it's not a promise
+2017-09-11 11:48:33	Nimelrian	<@173766114348630017> Yup, above anything else
+2017-09-11 11:48:45	BTM	Maybe you forgot an `return` inside the function
+2017-09-11 11:48:56	spykr	your solution and react-portal both look handy i'll try them out, thanks guys
+2017-09-11 11:49:07	Muhammad Arslan	```
+2017-09-11 11:49:07		export const deleteTemplate = (templateID) => {
+2017-09-11 11:49:07		  const uri = `/api/templates/${templateID}`;
+2017-09-11 11:49:07		  ajaxPromise({
+2017-09-11 11:49:07		    url: uri,
+2017-09-11 11:49:07		    type: 'DELETE'
+2017-09-11 11:49:07		  });
+2017-09-11 11:49:07		}
+2017-09-11 11:49:07		```
+2017-09-11 11:49:07		this is the function that has promise...
+2017-09-11 11:49:23	Nimelrian	<@173766114348630017> Note that with my solution you have a "single source of truth" for the whole dialog system
+2017-09-11 11:49:33	BTM	Well, it's not returning, so `deleteTemplate()` will return `undefined`
+2017-09-11 11:49:43	Nimelrian	Instead of some logic sprinkled here and there and all over the place
+2017-09-11 11:49:45	Muhammad Arslan	Where do I need to put a return? It's a delete function.
+2017-09-11 11:50:12	BTM	You want to add `.then` to it, so it should return the promise
+2017-09-11 11:50:21	BTM	It does not matter if it's a deleting or creating function
+2017-09-11 11:51:09	holz	<@119844508086042627> do you probably have a hint for my problem with the arrays?
+2017-09-11 11:51:34	senthil	<@119844508086042627>  thank you it is working fine, I was using redux, forgot add async block inside retrun (dispath) =>{....}
+2017-09-11 11:51:46	senthil	EDIT: <@119844508086042627>  thank you it is working fine, I was using redux, forgot add async block inside retrun (dispacth) =>{....}
+2017-09-11 11:52:18	BTM	Well you ARE pushing an array to an array
+2017-09-11 11:52:37	holz	yes I know, how can I remove the inner array
+2017-09-11 11:52:43	holz	kan I make it to an object?
+2017-09-11 11:52:48	holz	or flatten it?
+2017-09-11 11:53:06	BTM	Why would you want to make it to an object? You can spread it
+2017-09-11 11:53:16	holz	how can I spread it?
+2017-09-11 11:53:16	BTM	```js
+2017-09-11 11:53:16		const a = [];
+2017-09-11 11:53:16		a.push(...[1,2,3]);
+2017-09-11 11:53:16		```
+2017-09-11 11:54:27	holz	I think thats not the same ... Now only one is in the array ... but I need both results inn the array
+2017-09-11 11:55:36	holz	https://media.discordapp.net/attachments/102860784329052160/356739544390828032/Screenshot_2017.09.11_11h55m25s_020_.png
+2017-09-11 11:56:58	BTM	How did you change it?
+2017-09-11 11:57:22	holz	```users.push(...[data.Users.filter(userAws => userAws.Username === user.username)])```
+2017-09-11 11:57:29	BTM	remove the `[]`
+2017-09-11 11:58:47	holz	perfectly thanks
+2017-09-11 12:04:46	holz	now I have the Problem that the brackets are empty and I can't iterate over it
+2017-09-11 12:04:46		https://media.discordapp.net/attachments/102860784329052160/356741849823838208/image.png
+2017-09-11 12:17:43	senthil	```
+2017-09-11 12:17:43		const mapStateToProps = (state) =>{
+2017-09-11 12:17:43		  const{data,socialAuthToken} = state.ExecuteCampaignReducer;
+2017-09-11 12:17:43		  this.onSuccessListener(data);
+2017-09-11 12:17:43		  return{data,socialAuthToken}
+2017-09-11 12:17:43		}
+2017-09-11 12:17:43		```
+2017-09-11 12:17:43		hey all!! I'm getting an success response from server, and once I get success message I wanted to execute a the onSuccessListener method, I'm using redux, but I cannot execute method from mapStateToProps
+2017-09-11 12:18:01	senthil	EDIT: ```
+2017-09-11 12:18:01		const mapStateToProps = (state) =>{
+2017-09-11 12:18:01		  const{data,socialAuthToken} = state.ExecuteCampaignReducer;
+2017-09-11 12:18:01		  this.onSuccessListener(data);
+2017-09-11 12:18:01		  return{data,socialAuthToken}
+2017-09-11 12:18:01		}
+2017-09-11 12:18:01		```
+2017-09-11 12:18:01		hey all!! I'm getting an success response from server, and once I get success message I wanted to execute the onSuccessListener method, I'm using redux, but I cannot execute method from mapStateToProps
+2017-09-11 12:21:19	lalalawututu	How can I get the li's index in the ul list?
+2017-09-11 12:21:26	lalalawututu	https://media.discordapp.net/attachments/102860784329052160/356746047986335744/unknown.png
+2017-09-11 12:22:18	lalalawututu	I want click the element to get the <li> index.
+2017-09-11 12:23:42	BTM	<@303809486454521856> they are no empty as you can see that there are items in them, on your screenshot
+2017-09-11 12:24:04	BTM	Remember that the collapsed version is logged at time of `console.log`, the expanded version is the mutated object (and you are mutating it with .push)
+2017-09-11 12:25:39	tiuPapa	Okay in my files that has only a functional component, can I just do `import 'react'` or do I need to do `import React frrom 'react'`?
+2017-09-11 12:25:45	tiuPapa	EDIT: Okay in my files that has only a functional component, can I just do `import 'react'` or do I need to do `import React from 'react'`?
+2017-09-11 12:26:30	BTM	the 2nd
+2017-09-11 12:27:28	tiuPapa	Alright thanks
+2017-09-11 12:28:35	tiuPapa	Does CRA use react-hot-loader?
+2017-09-11 12:29:33	BTM	Yes, but it does not have hot module reload active
+2017-09-11 12:29:45	BTM	So any change will result in the app full reload
+2017-09-11 12:32:07	tiuPapa	Ohhh okay
+2017-09-11 12:37:47	tiuPapa	is react-router the only solution for client-side routing?
+2017-09-11 12:38:02	BTM	No, there are many other routers
+2017-09-11 12:39:06	BTM	https://github.com/pshrmn/curi http://router5.github.io/
+2017-09-11 12:39:06	BTM	EDIT: https://github.com/pshrmn/curi http://router5.github.io/
+2017-09-11 12:39:42	reactIsExquisite	<@119844508086042627> I could not still find the solution for that id issue where I wanted dynamic number of input addition, display data from the server etc. I tried the new way by defining the state in a very different way. But I want your suggestion if this is the right way or not.
+2017-09-11 12:39:42		https://codesandbox.io/s/6w8oy877zk
+2017-09-11 12:39:44	reactIsExquisite	EDIT: <@119844508086042627> I could not still find the solution for that id issue where I wanted dynamic number of input addition, display data from the server etc. I tried the new way by defining the state in a very different way. But I want your suggestion if this is the right way or not.
+2017-09-11 12:39:44		https://codesandbox.io/s/6w8oy877zk
+2017-09-11 12:40:06	tiuPapa	oh nice. thanks. I feel like the learning curve for react-router is a bit steep for a noob like me.

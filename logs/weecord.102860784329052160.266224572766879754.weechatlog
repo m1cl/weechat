@@ -1,0 +1,1 @@
+2017-09-11 11:50:26	rymdmaskin	Just started trying out ReactVr. Trying to add a `Text` onto a `Box`. The `Box` has a texture and then I want to add a `Text` on the side of the `Box`. When I nest the text inside of the box the aligning go crazy. The `Text` inside is relative to the `Box` or am I mistaken?

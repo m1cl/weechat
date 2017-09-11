@@ -1,0 +1,293 @@
+2017-09-07 18:35:11	-->	m1cl (~m1cl@193.175.2.18) hat den Channel #weechat betreten
+2017-09-07 18:35:11	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-07 18:35:11	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:53
+2017-09-07 18:35:11	--	Channel #weechat: 744 Nicks (5 Operatoren, 1 ge-voice-ter, 738 normale)
+2017-09-07 18:35:11	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-07 18:35:11	--	URL für #weechat: https://weechat.org/
+2017-09-07 18:35:13	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-07 18:35:31	m1cl	hey which script do I have to install to get a notification by mentioning my nick?
+2017-09-07 18:36:01	m1cl	I have installed notify_send, but I doesn t work, I tested by mentioning myself
+2017-09-07 18:37:36	LordRyan	are you running weechat on the same system that you have an X display on?
+2017-09-07 18:38:34	m1cl	yes
+2017-09-07 18:38:44	<--	Zialus (~RMF@174.203.60.94.rev.vodafone.pt) hat den IRC verlassen (Quit: i'm out!)
+2017-09-07 18:39:36	LordRyan	and using `notify-send "test" "potato"` in a terminal works?
+2017-09-07 18:40:43	cawfee	lol potato
+2017-09-07 18:41:24	m1cl	works
+2017-09-07 18:42:31	m1cl	maybe it s disabled by default in the script file 
+2017-09-07 18:43:50	<--	Selth (~Selth@90.253.66.36) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-07 18:44:24	m1cl	nothing to change there ... I probably have to do it by myself .-
+2017-09-07 18:44:30	m1cl	what a terrible world
+2017-09-07 18:46:05	cawfee	does /exec notify-send dest tomato work?
+2017-09-07 18:46:20		Invalid number of options.
+2017-09-07 18:46:20		exec: Befehl 0 ("notify-send dest tomato work") wurde beendet, Rückgabewert: 1
+2017-09-07 18:46:29		exec: Befehl 0 ("notify-send dest tomato") wurde beendet, Rückgabewert: 0
+2017-09-07 18:46:31	m1cl	yes
+2017-09-07 18:47:07	LordRyan	m1cl: on the plus side at least you don't try to do it over SSH :P
+2017-09-07 18:47:30	--	irc: Vom Server getrennt!
+2017-09-07 18:48:00	-->	m1cl (~m1cl@193.175.2.18) hat den Channel #weechat betreten
+2017-09-07 18:48:00	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-07 18:48:00	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:52
+2017-09-07 18:48:00	--	Channel #weechat: 742 Nicks (5 Operatoren, 1 ge-voice-ter, 736 normale)
+2017-09-07 18:48:01	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-07 18:48:01	--	URL für #weechat: https://weechat.org/
+2017-09-07 18:48:06	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-07 18:48:10	m1cl	it works now
+2017-09-07 18:48:12	m1cl	m1cl: hi
+2017-09-07 18:48:21	m1cl	can someone mention me
+2017-09-07 18:48:22	m1cl	pls
+2017-09-07 18:48:31	m1cl	what ssl? is it goodß
+2017-09-07 18:48:31	<--	choki (~weechat@unaffiliated/choki) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-07 18:48:42	<--	MyMind (~Sembei@unaffiliated/sembei) hat den IRC verlassen (Read error: Connection reset by peer)
+2017-09-07 18:49:04	-->	MyMind (~Sembei@unaffiliated/sembei) hat den Channel #weechat betreten
+2017-09-07 18:49:04	m1cl	is it script?
+2017-09-07 18:49:05	cawfee	m1cl: beep boop
+2017-09-07 18:49:23	m1cl	cawfee: great, works
+2017-09-07 18:49:42	m1cl	thank you for your help
+2017-09-07 18:50:18	m1cl	another question, I want to bind ctrl j ctrp k to move between channels
+2017-09-07 18:51:09	<--	rebase (~rebase@50-90-59-67.res.bhn.net) hat den IRC verlassen (Remote host closed the connection)
+2017-09-07 18:51:19	qgTG	/help key
+2017-09-07 18:51:24	m1cl	thanks 
+2017-09-07 18:51:58	-->	rebase (~rebase@50-90-59-67.res.bhn.net) hat den Channel #weechat betreten
+2017-09-07 18:53:05	<--	slobber (~slobber@swift/alumni/slobber) verließ #weechat ("this was fun and all..")
+2017-09-07 18:56:06	<--	sneakyness (~sneakynes@unaffiliated/sneakyness) hat den IRC verlassen (Remote host closed the connection)
+2017-09-07 18:56:49	--	irc: Vom Server getrennt!
+2017-09-08 19:41:15	-->	m1cl (~m1cl@193.175.2.18) hat den Channel #weechat betreten
+2017-09-08 19:41:15	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-08 19:41:15	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:25:13
+2017-09-08 19:41:15	--	Channel #weechat: 730 Nicks (5 Operatoren, 1 ge-voice-ter, 724 normale)
+2017-09-08 19:41:15	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-08 19:41:15	--	URL für #weechat: https://weechat.org/
+2017-09-08 19:41:17	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-08 19:42:05	m1cl	hi I try to install irssinotifer but I got an error. It says the script uses an unsupported language 
+2017-09-08 19:43:09	grawity	whether the language is supported or not, irssi scripts aren't going to work in weechat either way
+2017-09-08 19:43:31	m1cl	why?
+2017-09-08 19:43:42	-->	Scary_Guy (~weechat@d149-67-133-169.col.wideopenwest.com) hat den Channel #weechat betreten
+2017-09-08 19:44:41	arza	irssinotifier.py is a weechat script and requires the python plugin
+2017-09-08 19:44:42	m1cl	I followed the instruction on the arch linux weechat documenation
+2017-09-08 19:45:03	Scary_Guy	greetings, how do I make the text background black in the main chat window field?  The only things I managed to set black is the empty space bleow it, the time, and the notice text
+2017-09-08 19:45:24	grawity	oh so it links to a Weechat port of the script
+2017-09-08 19:45:49	<--	watered (~water@2405:204:568b:976d:63a3:c754:9ac:2b8e) hat den IRC verlassen (Ping timeout: 255 seconds)
+2017-09-08 19:46:34	m1cl	where to I get the python plugin ? @arza
+2017-09-08 19:47:41	Scary_Guy	searched for bg in /iset and changed all relevant options there, still a dark gray on a lot of the field
+2017-09-08 19:49:51	arza	m1cl: it should be in arch's weechat package
+2017-09-08 19:50:56	arza	Scary_Guy: in your terminal
+2017-09-08 19:50:57	m1cl	arza: solved, works now
+2017-09-08 19:51:21	<--	damke_ (~damke@unaffiliated/damke) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-08 19:52:42	Scary_Guy	Tried that, black is already set to black.  tried changing the gray to black but it breaks things.  is there no setting in weechat to do this?
+2017-09-08 19:53:17	Scary_Guy	oh, nvm
+2017-09-08 19:53:26	Scary_Guy	I'm an idiot, was set to use system color scheme
+2017-09-08 19:53:38	Scary_Guy	thanks!
+2017-09-08 19:53:55	<--	Scary_Guy (~weechat@d149-67-133-169.col.wideopenwest.com) verließ #weechat ("WeeChat 1.9")
+2017-09-08 20:01:50	<--	m1cl (~m1cl@193.175.2.18) verließ #weechat ("WeeChat 1.9")
+2017-09-08 20:04:04	-->	m1cl (~m1cl@193.175.2.18) hat den Channel #weechat betreten
+2017-09-08 20:04:04	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-08 20:04:04	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:25:13
+2017-09-08 20:04:04	--	Channel #weechat: 728 Nicks (5 Operatoren, 1 ge-voice-ter, 722 normale)
+2017-09-08 20:04:04	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-08 20:04:04	--	URL für #weechat: https://weechat.org/
+2017-09-08 20:04:06	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-08 20:07:12	--	irc: Vom Server getrennt!
+2017-09-09 22:55:19	-->	m1cl (~m1cl@2a00:c1a0:489f:5700:224:d7ff:feb2:c0e4) hat den Channel #weechat betreten
+2017-09-09 22:55:19	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-09 22:55:19	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:53
+2017-09-09 22:55:19	--	Channel #weechat: 729 Nicks (5 Operatoren, 1 ge-voice-ter, 723 normale)
+2017-09-09 22:55:19	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-09 22:55:19	--	URL für #weechat: https://weechat.org/
+2017-09-09 22:55:21	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-09 22:55:29	m1cl	Hey guys, how can I enable javascript?
+2017-09-09 22:56:05	@FlashCode	m1cl: if you compiled weechat yourself, check dependencies are installed (see user's guide)
+2017-09-09 22:56:13	@FlashCode	otherwise, try to install weechat-plugins package
+2017-09-09 22:56:31	@FlashCode	and javascript is available in weechat >= 1.2
+2017-09-09 22:56:43	m1cl	cool i m gonna check it out 
+2017-09-09 22:57:44	<--	robineb (~robinb@2400:2412:6e0:4000:c572:1d27:9b33:41d3) hat den IRC verlassen (Ping timeout: 246 seconds)
+2017-09-09 23:01:33	<--	aswen (~aswen@lochem.swen.nu) hat den IRC verlassen (Quit: WeeChat 1.6)
+2017-09-09 23:02:18	--	nimaje ist nun als Guest71964 bekannt
+2017-09-09 23:02:18	<--	Guest71964 (~nimaje@p5485F73B.dip0.t-ipconnect.de) hat den IRC verlassen (Killed (card.freenode.net (Nickname regained by services)))
+2017-09-09 23:02:21	-->	nimaje (~nimaje@p4FC92BE3.dip0.t-ipconnect.de) hat den Channel #weechat betreten
+2017-09-09 23:03:06	--	irc: Vom Server getrennt!
+2017-09-10 13:06:09	-->	m1cl (~m1cl@2a00:c1a0:489f:5700:224:d7ff:feb2:c0e4) hat den Channel #weechat betreten
+2017-09-10 13:06:09	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-10 13:06:09	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:53
+2017-09-10 13:06:09	--	Channel #weechat: 721 Nicks (5 Operatoren, 1 ge-voice-ter, 715 normale)
+2017-09-10 13:06:09	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-10 13:06:09	--	URL für #weechat: https://weechat.org/
+2017-09-10 13:06:11	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-10 13:07:16	m1cl	hey friends, I have an issue with javascript. I wrote an simple script. After loading the script in weechat, it goes back into my shell and displays a weechat backtrace. what have I done?!
+2017-09-10 13:09:43	xt	you made a booboo
+2017-09-10 13:10:03	m1cl	aha
+2017-09-10 13:20:31	-->	andril (~andril@c-73-124-101-89.hsd1.fl.comcast.net) hat den Channel #weechat betreten
+2017-09-10 13:21:11	m1cl	another question, is there a way to seperate my freenode and slack channel : freenode: -vim -weechat | slack: -ilikedogs -ieatmeat
+2017-09-10 13:21:23	<--	met (~met@unaffiliated/met) hat den IRC verlassen (Read error: Connection reset by peer)
+2017-09-10 13:21:28	<--	robineb (~robinb@2400:2412:6e0:4000:c572:1d27:9b33:41d3) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 13:22:13	-->	met (~met@unaffiliated/met) hat den Channel #weechat betreten
+2017-09-10 13:24:20	-->	Elon_Satoshi (~elonsatos@unaffiliated/elon-satoshi/x-2794555) hat den Channel #weechat betreten
+2017-09-10 13:24:50	jokrebel	maybe /set buflist.look.sort "irc_server_name"
+2017-09-10 13:25:20	<--	Qommand0r (~HENKiE@unaffiliated/schaap137) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 13:27:03	sim642	You need irc.look.server_buffer option to be independent
+2017-09-10 13:27:12	jokrebel	and perhaps /set autosort.sorting.rules "[["irc", 3], ["core", 1], ["irc.irc_raw", 0], ["irc.server", 2]]"
+2017-09-10 13:27:14	sim642	then server buffers are not automatically merged and can be reordered
+2017-09-10 13:27:23	sim642	either manually, or by autosort.py
+2017-09-10 13:27:32	<--	andril (~andril@c-73-124-101-89.hsd1.fl.comcast.net) hat den IRC verlassen (Ping timeout: 260 seconds)
+2017-09-10 13:27:55	-->	Qommand0r (~HENKiE@unaffiliated/schaap137) hat den Channel #weechat betreten
+2017-09-10 13:28:05	-->	shiva__ (~shiva@unaffiliated/lordshiva) hat den Channel #weechat betreten
+2017-09-10 13:28:51	jokrebel	and /set irc.look.server_buffer independent
+2017-09-10 13:29:21	m1cl	jokrebel: that worked! thanks
+2017-09-10 13:30:21	<--	in1t3r_ (~shiva@unaffiliated/lordshiva) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 13:31:29	-->	xmorph (~xt_@unaffiliated/xmorph) hat den Channel #weechat betreten
+2017-09-10 13:32:42	<--	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den IRC verlassen (Ping timeout: 268 seconds)
+2017-09-10 13:33:09	jokrebel	you are welcome
+2017-09-10 13:34:05	-->	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den Channel #weechat betreten
+2017-09-10 13:37:47	<--	bookworm (~bookworm@unaffiliated/reto) hat den IRC verlassen (Quit: bookworm)
+2017-09-10 13:39:18	-->	bookworm (~bookworm@unaffiliated/reto) hat den Channel #weechat betreten
+2017-09-10 13:41:57	<--	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den IRC verlassen (Ping timeout: 268 seconds)
+2017-09-10 13:42:52	-->	choki (~weechat@unaffiliated/choki) hat den Channel #weechat betreten
+2017-09-10 13:43:59	<--	OnkelTem (~onkeltem@unaffiliated/fantomas) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-10 13:45:41	<--	_thelion_ (~Matthias@193-80-2-240.hdsl.highway.telekom.at) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 13:45:43	-->	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den Channel #weechat betreten
+2017-09-10 13:45:57	<--	wie (WeeChat.Is@Fast.Light.And.Extensible.Chat.Client.Info.Tm) hat den IRC verlassen (Ping timeout: 252 seconds)
+2017-09-10 13:47:05	-->	in1t3r_ (~shiva@unaffiliated/lordshiva) hat den Channel #weechat betreten
+2017-09-10 13:47:25	-->	andril (~andril@c-73-124-101-89.hsd1.fl.comcast.net) hat den Channel #weechat betreten
+2017-09-10 13:48:02	<--	andril (~andril@c-73-124-101-89.hsd1.fl.comcast.net) hat den IRC verlassen (Client Quit)
+2017-09-10 13:48:30	-->	sdothum (~znc@108.63.142.95) hat den Channel #weechat betreten
+2017-09-10 13:49:21	<--	shiva__ (~shiva@unaffiliated/lordshiva) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-10 13:50:37	-->	shiva__ (~shiva@unaffiliated/lordshiva) hat den Channel #weechat betreten
+2017-09-10 13:53:00	<--	in1t3r_ (~shiva@unaffiliated/lordshiva) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 13:53:44	<--	Rasi (~carnager@archlinux/support/rasi) hat den IRC verlassen (Quit: WeeChat 2.0-dev)
+2017-09-10 13:54:05	-->	Rasi (~carnager@archlinux/support/rasi) hat den Channel #weechat betreten
+2017-09-10 13:56:40	<--	irongeeks (~irongeeks@2604:6000:1001:e3:e177:bdf4:cb93:f698) hat den IRC verlassen (Quit: Leaving)
+2017-09-10 13:57:59	<--	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den IRC verlassen (Ping timeout: 268 seconds)
+2017-09-10 13:58:35	-->	in1t3r_ (~shiva@unaffiliated/lordshiva) hat den Channel #weechat betreten
+2017-09-10 13:59:47	-->	irongeeks (~irongeeks@2604:6000:1001:e3:9d41:27a8:d52c:3f8) hat den Channel #weechat betreten
+2017-09-10 14:00:16	-->	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den Channel #weechat betreten
+2017-09-10 14:01:07	<--	shiva__ (~shiva@unaffiliated/lordshiva) hat den IRC verlassen (Ping timeout: 255 seconds)
+2017-09-10 14:08:00	-->	MorpheusB (~morpheusb@141.255.164.67.adsl.inet-telecom.org) hat den Channel #weechat betreten
+2017-09-10 14:08:01	<--	damke_ (~damke@unaffiliated/damke) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 14:08:58	-->	Krennic (~Krennic@ool-1826fd18.dyn.optonline.net) hat den Channel #weechat betreten
+2017-09-10 14:10:04	-->	nanonyme (nanonyme@unaffiliated/nanonyme) hat den Channel #weechat betreten
+2017-09-10 14:10:36	nanonyme	I see some new version added a bar with channels listed to the left of the text. How do you remove that?
+2017-09-10 14:10:45	-->	damke_ (~damke@unaffiliated/damke) hat den Channel #weechat betreten
+2017-09-10 14:12:43	nanonyme	Found it. buflist.look.enabled
+2017-09-10 14:14:37	<--	Krennic (~Krennic@ool-1826fd18.dyn.optonline.net) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 14:17:26	<--	xmorph (~xt_@unaffiliated/xmorph) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 14:20:17	<--	coco (~coco@213-194-221-81.pool.dsl-net.ch) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-10 14:22:25	<--	srisri (~srisri@202.95.77.70) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-10 14:23:04	-->	xmorph (~xt_@unaffiliated/xmorph) hat den Channel #weechat betreten
+2017-09-10 14:23:10	<--	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den IRC verlassen (Remote host closed the connection)
+2017-09-10 14:23:31	-->	Edu4rdSHL (~Edward@gateway/tor-sasl/edu4rdshl) hat den Channel #weechat betreten
+2017-09-10 14:24:47	<--	choki (~weechat@unaffiliated/choki) hat den IRC verlassen (Quit: the whippings shall continue until morale improves)
+2017-09-10 14:29:24	<--	Raku (josh@c-73-32-157-13.hsd1.tx.comcast.net) hat den IRC verlassen (Ping timeout: 252 seconds)
+2017-09-10 14:30:28	-->	Raku (~raku@2601:2c7:4300:51e3:c97e:85b3:37c3:719b) hat den Channel #weechat betreten
+2017-09-10 14:31:20	-->	Krennic (~Krennic@ool-1826fd18.dyn.optonline.net) hat den Channel #weechat betreten
+2017-09-10 14:33:21	-->	robineb (~robinb@2400:2412:6e0:4000:c572:1d27:9b33:41d3) hat den Channel #weechat betreten
+2017-09-10 14:34:23	--	irc: Vom Server getrennt!
+2017-09-10 14:56:11	-->	m1cl (~m1cl@2a00:c1a0:489f:5700:224:d7ff:feb2:c0e4) hat den Channel #weechat betreten
+2017-09-10 14:56:11	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-10 14:56:11	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:53
+2017-09-10 14:56:11	--	Channel #weechat: 721 Nicks (5 Operatoren, 1 ge-voice-ter, 715 normale)
+2017-09-10 14:56:11	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-10 14:56:11	--	URL für #weechat: https://weechat.org/
+2017-09-10 14:56:14	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-10 14:58:12	m1cl	I have all my channels sorted by server and  now I want do be able to collapse the servers. Is it possible? For example hitting ctrlp enter while sitting with the cursor on the server name
+2017-09-10 14:58:41	m1cl	My list ist pretty long, slack + discord + freenode
+2017-09-10 15:02:53	-->	tigrmesh (~tigrmesh@archlinux/op/tigrmesh) hat den Channel #weechat betreten
+2017-09-10 15:04:51	--	irc: Vom Server getrennt!
+2017-09-10 15:05:28	-->	m1cl (~m1cl@2a00:c1a0:489f:5700:224:d7ff:feb2:c0e4) hat den Channel #weechat betreten
+2017-09-10 15:05:28	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-10 15:05:28	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:53
+2017-09-10 15:05:29	--	Channel #weechat: 722 Nicks (5 Operatoren, 1 ge-voice-ter, 716 normale)
+2017-09-10 15:05:29	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-10 15:05:29	--	URL für #weechat: https://weechat.org/
+2017-09-10 15:05:31	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-10 15:08:50	Kuunsi	"long", as in "more than 100 buffers"?
+2017-09-10 15:08:52	Kuunsi	:p
+2017-09-10 15:09:52	m1cl	I said pretty 
+2017-09-10 15:19:25	watered	Hi
+2017-09-10 15:19:28	m1cl	hi
+2017-09-10 15:19:42	watered	how do I get the list of plugin page?
+2017-09-10 15:19:59	watered	not list
+2017-09-10 15:20:05	watered	the plugin page
+2017-09-10 15:20:28	m1cl	on the website?
+2017-09-10 15:21:50	-->	Pisuke (~Sembei@unaffiliated/sembei) hat den Channel #weechat betreten
+2017-09-10 15:23:41	-->	Sembei (~Sembei@unaffiliated/sembei) hat den Channel #weechat betreten
+2017-09-10 15:24:01	<--	MyMind (~Sembei@unaffiliated/sembei) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 15:25:32	<--	irc-5225225 (~weechat@gateway/tor-sasl/irc-5225225) hat den IRC verlassen (Remote host closed the connection)
+2017-09-10 15:26:06	-->	einveru_ (~einveru@ip70-189-20-24.lf.br.cox.net) hat den Channel #weechat betreten
+2017-09-10 15:26:09	-->	blaze (~blaze@unaffiliated/blaze) hat den Channel #weechat betreten
+2017-09-10 15:26:13	-->	irc-5225225 (~weechat@gateway/tor-sasl/irc-5225225) hat den Channel #weechat betreten
+2017-09-10 15:26:57	<--	Pisuke (~Sembei@unaffiliated/sembei) hat den IRC verlassen (Ping timeout: 248 seconds)
+2017-09-10 15:31:20	MrElendig	s/plugin/scripts/ ?
+2017-09-10 15:33:18	--	irc: Vom Server getrennt!
+2017-09-10 17:07:51	-->	m1cl (~m1cl@193.175.2.18) hat den Channel #weechat betreten
+2017-09-10 17:07:51	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-10 17:07:51	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:25:13
+2017-09-10 17:07:51	--	Channel #weechat: 722 Nicks (5 Operatoren, 1 ge-voice-ter, 716 normale)
+2017-09-10 17:07:51	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-10 17:07:51	--	URL für #weechat: https://weechat.org/
+2017-09-10 17:07:53	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-10 17:08:37	m1cl	what is the keycode for shift? I m using the vimode and when I press shift + j it goes up instead of down. 
+2017-09-10 17:09:13	sim642	you can get key codes by pressing alt+k followed by the keys you want
+2017-09-10 17:09:14	grawity	in terminal programs, there isn't any
+2017-09-10 17:09:26	sim642	but shift+j is just J
+2017-09-10 17:09:27	grawity	only distinct codes for j and J, for example
+2017-09-10 17:09:41	grawity	however, *not* ctrl-j and ctrl-shift-j
+2017-09-10 17:09:57	m1cl	yeah shift j is J
+2017-09-10 17:10:30	m1cl	nothing happens when I press alt + k + somekey
+2017-09-10 17:11:41	-->	nast (~nast@64.137.182.14) hat den Channel #weechat betreten
+2017-09-10 17:12:59	Kunsi	alt-k, then release, then press the key
+2017-09-10 17:14:50	presiden	alt+k then alt+space five times to type the longest chain of text using the minimum keypress
+2017-09-10 17:15:51	<--	ponyrider (~cf2iqx@unaffiliated/ponyrider) hat den IRC verlassen (Read error: Connection reset by peer)
+2017-09-10 17:15:55	m1cl	i guess my terminal has binded alt key
+2017-09-10 17:20:19	m1cl	anyway I just binded ctrl-K to /buffer -1 and ctrl-J to /buffer +1
+2017-09-10 17:20:33	m1cl	now I m happy
+2017-09-10 17:21:09	-->	choki (~weechat@unaffiliated/choki) hat den Channel #weechat betreten
+2017-09-10 17:22:12	<--	tigrmesh (~tigrmesh@archlinux/op/tigrmesh) hat den IRC verlassen (Ping timeout: 255 seconds)
+2017-09-10 17:22:55	-->	_bookworm (~bookworm@unaffiliated/reto) hat den Channel #weechat betreten
+2017-09-10 17:23:09	<--	_bookworm (~bookworm@unaffiliated/reto) hat den IRC verlassen (Client Quit)
+2017-09-10 17:23:42	-->	_bookworm (~bookworm@unaffiliated/reto) hat den Channel #weechat betreten
+2017-09-10 17:32:35	<--	irongeeks (~irongeeks@2604:6000:1001:e3:9d41:27a8:d52c:3f8) hat den IRC verlassen (Quit: Leaving)
+2017-09-10 17:34:00	-->	jathan (~jathan@189.216.207.255) hat den Channel #weechat betreten
+2017-09-10 17:34:35	-->	Elvis`` (~Elvis``@unaffiliated/elvis/x-8724822) hat den Channel #weechat betreten
+2017-09-10 17:34:54	<--	_thelion_ (~Matthias@193-80-2-240.hdsl.highway.telekom.at) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 17:35:34	<--	Elvis`` (~Elvis``@unaffiliated/elvis/x-8724822) hat den IRC verlassen (Client Quit)
+2017-09-10 17:38:59	-->	tigrmesh (~tigrmesh@archlinux/op/tigrmesh) hat den Channel #weechat betreten
+2017-09-10 17:41:56	-->	kubast2 (~kubast2@94.246.179.29) hat den Channel #weechat betreten
+2017-09-10 17:42:02	<--	kelnoky (~shao@ip1f101e95.dynamic.kabel-deutschland.de) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 17:42:10	<--	nast (~nast@64.137.182.14) verließ #weechat
+2017-09-10 17:47:37	-->	robineb (~robinb@2400:2412:6e0:4000:c572:1d27:9b33:41d3) hat den Channel #weechat betreten
+2017-09-10 17:51:48	<--	einveru_ (~einveru@ip70-189-20-24.lf.br.cox.net) hat den IRC verlassen (Ping timeout: 260 seconds)
+2017-09-10 17:52:08	<--	robineb (~robinb@2400:2412:6e0:4000:c572:1d27:9b33:41d3) hat den IRC verlassen (Ping timeout: 240 seconds)
+2017-09-10 17:56:48	-->	robineb (~robinb@softbank126077151239.bbtec.net) hat den Channel #weechat betreten
+2017-09-10 17:58:21	-->	Zucca (~zucca@85-76-4-134-nat.elisa-mobile.fi) hat den Channel #weechat betreten
+2017-09-10 17:59:08	-->	fayek (~fayek@unaffiliated/fayek) hat den Channel #weechat betreten
+2017-09-10 17:59:13	<--	jschoolcraft (~jschoolcr@pool-74-96-114-169.washdc.fios.verizon.net) hat den IRC verlassen (Quit: WeeChat 1.9)
+2017-09-10 18:02:31	-->	jschoolcraft (~jschoolcr@pool-74-96-114-169.washdc.fios.verizon.net) hat den Channel #weechat betreten
+2017-09-10 18:03:46	-->	indeedwatson (~yama@host61.201-252-86.telecom.net.ar) hat den Channel #weechat betreten
+2017-09-10 18:04:57	--	irc: Vom Server getrennt!
+2017-09-11 12:00:34	-->	m1cl (~m1cl@2a00:c1a0:489f:5700:224:d7ff:feb2:c0e4) hat den Channel #weechat betreten
+2017-09-11 12:00:34	--	Das Thema von #weechat lautet: "https://weechat.org/ | Latest stable version: 1.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-09-11 12:00:34	--	Thema wurde festgelegt von FlashCode (~FlashCode@weechat.org) am Mi, 06 Sep 2017 07:22:52
+2017-09-11 12:00:34	--	Channel #weechat: 714 Nicks (5 Operatoren, 1 ge-voice-ter, 708 normale)
+2017-09-11 12:00:34	--	PvHinweis(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-09-11 12:00:34	--	URL für #weechat: https://weechat.org/
+2017-09-11 12:00:36	--	Channel erstellt am So, 26 Nov 2006 07:42:51
+2017-09-11 12:01:17	m1cl	hey, what is the best way to save weechat config? I wanna save my bindings and also the scripts I installed 
+2017-09-11 12:02:35	atluxity	uhm, /save
+2017-09-11 12:06:31	cawfee	well liviuc F11 expands out to ESC [ 23 ~
+2017-09-11 12:06:49	cawfee	so alt-[,2,3,~ is equivalent to F11
+2017-09-11 12:07:00	cawfee	and 2,4 for F12
+2017-09-11 12:07:47	grawity	yes but who would ever want to type that
+2017-09-11 12:08:57	cawfee	when you have F11 bounded to fullscreen and you really need to send an F11
+2017-09-11 12:09:25	cawfee	Do you not type ESC [ [ A for the up key?
+2017-09-11 12:09:56	grawity	only on an ADM3A
+2017-09-11 12:11:57	<--	Condor (~condor@unaffiliated/condor) hat den IRC verlassen (Ping timeout: 260 seconds)
+2017-09-11 12:13:59	-->	_bookworm (~bookworm@unaffiliated/reto) hat den Channel #weechat betreten
+2017-09-11 12:14:34	-->	Cueball (lee@crush.lb3.co.uk) hat den Channel #weechat betreten
+2017-09-11 12:25:54	-->	Condor (~condor@unaffiliated/condor) hat den Channel #weechat betreten
+2017-09-11 12:26:05	<--	dgeex (~dgeex@gateway/tor-sasl/dgeex) hat den IRC verlassen (Remote host closed the connection)
+2017-09-11 12:28:17	-->	dgeex (~dgeex@gateway/tor-sasl/dgeex) hat den Channel #weechat betreten
+2017-09-11 12:35:10	m1cl	so do I have save all files from the .weechat directory? Or is there a central file which contains all information, a package.json type of thing?
+2017-09-11 12:38:29	<--	fayek (~fayek@unaffiliated/fayek) hat den IRC verlassen (Quit: So long and thanks for all the fish.)
+2017-09-11 12:38:58	MrElendig	m1cl: if you use /secure then just git add your .weechat ?
+2017-09-11 12:39:26	m1cl	0
+2017-09-11 12:39:39	m1cl	MrElendig: Cool thanks!
+2017-09-11 12:40:26	<--	Elon_Satoshi (~elonsatos@unaffiliated/elon-satoshi/x-2794555) hat den IRC verlassen (Read error: Connection reset by peer)
